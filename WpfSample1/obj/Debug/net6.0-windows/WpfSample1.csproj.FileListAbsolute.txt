@@ -91,3 +91,5 @@ D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\WpfSample1.genrunt
 D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\ref\WpfSample1.dll
 D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day2\DynamicResource2Sample.g.cs
 D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day2\DynamicResource2Sample.baml
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day2\ControlTemplateDemo.g.cs
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day2\ControlTemplateDemo.baml

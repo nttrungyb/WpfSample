@@ -36,11 +36,12 @@
 
             <StackPanel Margin="3" Name="stackPanel2" Orientation="Vertical">
                 <Label Margin="3" HorizontalAlignment="Center" FontWeight="Bold" >Day 2 - WPF Control Samples</Label>
-                <Button x:Name="button14" Content="Control Showcase" Margin="10" Width="120" Height="30" Click="button14_Click"></Button>
-                <Button x:Name="button15" Content="Form Validation Showcase" Margin="10" Width="120" Height="30" Click="button15_Click"></Button>
-                <Button x:Name="button16" Content="Resource Showcase" Margin="10" Width="120" Height="30" Click="button16_Click"></Button>
-                <Button x:Name="button17" Content="Dynamic Resource" Margin="10" Width="120" Height="30" Click="button17_Click"></Button>
-                <Button x:Name="button18" Content="Dynamic Resource 2" Margin="10" Width="120" Height="30" Click="button18_Click"></Button>
+                <Button x:Name="btnControlShowcase" Content="Control Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
+                <Button x:Name="btnFormValidation" Content="Form Validation Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
+                <Button x:Name="btnStaticResource" Content="Static Resource" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
+                <Button x:Name="btnDynamicResource" Content="Dynamic Resource" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
+                <Button x:Name="btnDynamicResource2" Content="Dynamic Resource 2" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
+                <Button x:Name="btnControlTemplate" Content="Control Template" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
 
 
             </StackPanel>

@@ -99,39 +99,85 @@ namespace WpfSample1
             cboForm.ShowDialog();
         }
 
-        private void button14_Click(object sender, RoutedEventArgs e)
-        {
-            ControlDemo controlDemo = new ControlDemo();    
-            controlDemo.Owner = this;   
-            controlDemo.ShowDialog();   
-        }
+        //private void button14_Click(object sender, RoutedEventArgs e)
+        //{
+        //    ControlDemo controlDemo = new ControlDemo();    
+        //    controlDemo.Owner = this;   
+        //    controlDemo.ShowDialog();   
+        //}
 
-        private void button15_Click(object sender, RoutedEventArgs e)
-        {
-            ValidateForm validateForm = new ValidateForm();
-            validateForm.Owner = this;
-            validateForm.ShowDialog();
-        }
+        //private void button15_Click(object sender, RoutedEventArgs e)
+        //{
+        //    ValidateForm validateForm = new ValidateForm();
+        //    validateForm.Owner = this;
+        //    validateForm.ShowDialog();
+        //}
 
-        private void button16_Click(object sender, RoutedEventArgs e)
-        {
-            ResourceDemo resourceForm = new ResourceDemo();
-            resourceForm.Owner = this;
-            resourceForm.ShowDialog();
-        }
+        //private void button16_Click(object sender, RoutedEventArgs e)
+        //{
+        //    ResourceDemo resourceForm = new ResourceDemo();
+        //    resourceForm.Owner = this;
+        //    resourceForm.ShowDialog();
+        //}
 
-        private void button17_Click(object sender, RoutedEventArgs e)
-        {
-            DynamicResourceDemo resourceForm = new DynamicResourceDemo();
-            resourceForm.Owner = this;
-            resourceForm.ShowDialog();
-        }
+        //private void button17_Click(object sender, RoutedEventArgs e)
+        //{
+        //    DynamicResourceDemo resourceForm = new DynamicResourceDemo();
+        //    resourceForm.Owner = this;
+        //    resourceForm.ShowDialog();
+        //}
 
-        private void button18_Click(object sender, RoutedEventArgs e)
+        //private void button18_Click(object sender, RoutedEventArgs e)
+        //{
+        //    DynamicResource2Sample resourceForm = new DynamicResource2Sample();
+        //    resourceForm.Owner = this;
+        //    resourceForm.ShowDialog();
+        //}
+
+        private void ShowCase_Click(object sender, RoutedEventArgs e)
         {
-            DynamicResource2Sample resourceForm = new DynamicResource2Sample();
-            resourceForm.Owner = this;
-            resourceForm.ShowDialog();
+            if (sender == btnControlTemplate)
+            {
+                ControlTemplateDemo form = new ControlTemplateDemo();
+                form.Owner = this;
+                form.ShowDialog();
+            }
+
+            if (sender == btnDynamicResource2)
+            {
+                DynamicResource2Sample form = new DynamicResource2Sample();
+                form.Owner = this;
+                form.ShowDialog();
+            }
+
+            if (sender == btnDynamicResource)
+            {
+                DynamicResourceDemo form = new DynamicResourceDemo();
+                form.Owner = this;
+                form.ShowDialog();
+            }
+
+            if (sender == btnStaticResource)
+            {
+                ResourceDemo form = new ResourceDemo();
+                form.Owner = this;
+                form.ShowDialog();
+            }
+
+            if (sender == btnFormValidation)
+            {
+                ValidateForm form = new ValidateForm();
+                form.Owner = this;
+                form.ShowDialog();
+            }
+
+            if (sender == btnControlShowcase)
+            {
+                ControlDemo form = new ControlDemo();
+                form.Owner = this;
+                form.ShowDialog();
+            }
+
         }
 
 
