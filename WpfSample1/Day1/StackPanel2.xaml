@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfSample1.Component.StackPanel2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSample1.Component"
+        mc:Ignorable="d"
+        Title="StackPanel2" Height="450" Width="450"
+        WindowStartupLocation="CenterOwner">
+    <StackPanel x:Name="stackPanel2">
+        <Button Content="Here 's a button"></Button>
+        <TextBox Text="Hello There" TextAlignment="Center" 
+                 SelectionBrush="Red">
+            
+        </TextBox>
+        <TextBlock>A text box</TextBlock>
+        <CheckBox> Check me!</CheckBox>
+        <Button Content="One more button"></Button>
+    </StackPanel>
+</Window>

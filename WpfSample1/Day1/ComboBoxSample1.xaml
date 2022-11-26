@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfSample1.Component.ComboBoxSample1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSample1.Component"
+        mc:Ignorable="d"
+        Title="ComboBoxSample1" Height="250" Width="450"
+        WindowStartupLocation="CenterOwner">
+    <StackPanel>
+        <ComboBox x:Name="cboSeaFood" IsEditable="True" Margin="5" SelectionChanged="cboSeaFood_SelectionChanged">
+            <ComboBoxItem Content="Tiểu Vy" Selected="ComboBoxItem_Selected"></ComboBoxItem>
+            <ComboBoxItem Content="Mai Ngọc" Selected="ComboBoxItem_Selected"></ComboBoxItem>
+            <ComboBoxItem Content="Phương Oanh" Selected="ComboBoxItem_Selected"></ComboBoxItem>
+            <ComboBoxItem Content="Mai Bella" Selected="ComboBoxItem_Selected"></ComboBoxItem>
+            <ComboBoxItem Content="Ngọc Trinh" Selected="ComboBoxItem_Selected"></ComboBoxItem>
+        </ComboBox>
+        <Button Content="Get Selected" Margin="5" Width="100" Click="Button_Click"></Button>
+
+        <ComboBox Height="39" HorizontalAlignment="Left" Name="ComboBox1" VerticalAlignment="Top"
+                  Width="120" SelectedIndex="0" VerticalContentAlignment="Center">
+            <ComboBoxItem>Cháo bào ngư</ComboBoxItem>
+            <ComboBoxItem FontFamily="Comic Sans MS" FontSize="18" Foreground="Blue">Tôm hùm bỏ lò phô mai</ComboBoxItem>
+            <ComboBoxItem Name="cbiSmile">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="D:\CODE\WPF\WpfSample1\WpfSample1\Resources\Images\maingoc.jpg" Width="150" Height="150"></Image>
+                    <Label Content="Mai Ngọc"></Label>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>Súp yến hải sản</ComboBoxItem>
+            <ComboBoxItem>Miến cua bể</ComboBoxItem>
+        </ComboBox>
+        
+    </StackPanel>
+</Window>

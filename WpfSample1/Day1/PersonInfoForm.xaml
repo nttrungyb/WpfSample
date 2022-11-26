@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfSample1.Component.PersonInfoForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSample1.Component"
+        mc:Ignorable="d"
+        Title="Thông tin người dùng" Height="450" Width="800"
+        WindowStartupLocation="CenterOwner">
+    <DockPanel Background="AliceBlue">
+        <TextBlock DockPanel.Dock="Top" TextAlignment="Center"
+                   FontWeight="Bold" FontSize="24" Foreground="Green"> Khai báo Thông tin người dùng</TextBlock>
+        <StackPanel Orientation="Horizontal" 
+                    DockPanel.Dock="Bottom"
+                    HorizontalAlignment="Right"
+                    >
+            <Button Content="Lưu dữ liệu" Margin="10" Width="100" Click="Button_Click"></Button>
+        </StackPanel>
+        <Grid x:Name="FormLayoutGrid" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Margin="10" Width="100" HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Grid.Row="0"
+                   Grid.Column="0">Họ và tên</TextBlock>
+            <TextBox Grid.Row="0"
+                   Grid.Column="1" Margin="10" VerticalContentAlignment="Center" Foreground="Green"></TextBox>
+            <TextBlock Margin="10" Width="100" HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Grid.Row="1"
+                   Grid.Column="0">Địa chỉ</TextBlock>
+            <TextBox Grid.Row="1"
+                   Grid.Column="1" Margin="10" VerticalContentAlignment="Center" Foreground="Green"></TextBox>
+            <TextBlock Margin="10" Width="100" HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Grid.Row="2"
+                   Grid.Column="0">Tuổi</TextBlock>
+            <TextBox Grid.Row="2"
+                   Grid.Column="1" Margin="10" VerticalContentAlignment="Center" Foreground="Green"></TextBox>
+        </Grid>
+    </DockPanel>
+    
+</Window>

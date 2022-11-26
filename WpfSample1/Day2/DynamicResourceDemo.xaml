@@ -1,0 +1,65 @@
+﻿<Window x:Class="WpfSample1.Day2.DynamicResourceDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSample1.Day2"
+        mc:Ignorable="d"
+        Title="DynamicResourceDemo" Height="600" Width="1000"
+        WindowStartupLocation="CenterOwner">
+    <Window.Resources>
+        <SolidColorBrush x:Key="SolidAquamarine" Color="Aquamarine"></SolidColorBrush>
+        <SolidColorBrush x:Key="SolidBlack" Color="Black"></SolidColorBrush>
+    </Window.Resources>
+    <Grid x:Name="mainGrid">
+        <StackPanel VerticalAlignment="Center">
+            <Button x:Name="submitButton"
+                    Background="{StaticResource SolidAquamarine}"
+                    BorderBrush="{StaticResource SolidBlack}"
+                    Content="Bún dọc mùng"
+                    Height="20"
+                    Width="100"
+                    ></Button>
+            <Button x:Name="exitButton" 
+                    Background="{DynamicResource ButtonExitBackgroundColor}"
+                    Foreground="{DynamicResource NgocTrinhForegroundColor}"
+                    BorderBrush="{DynamicResource ButtonExitBorderColor}"
+                    Margin="0 10 0 0"
+                    Content="Phở tái nạm gầu"
+                    Height="20"
+                    Width="100"
+                    ></Button>
+            <Button x:Name="exit2Button" 
+                    Background="{DynamicResource ButtonExitBackgroundColor}"
+                    Foreground="{DynamicResource NgocTrinhForegroundColor}"
+                    BorderBrush="{DynamicResource ButtonExitBorderColor}"
+                    Margin="0 10 0 0"
+                    Content="Bún chả nem cua bể"
+                    Height="20"
+                    Width="100"
+                    ></Button>
+            <Button x:Name="exit3Button" 
+                    Background="{DynamicResource ButtonExitBackgroundColor}"
+                    Foreground="{DynamicResource NgocTrinhForegroundColor}"
+                    BorderBrush="{DynamicResource ButtonExitBorderColor}"
+                    Margin="0 10 0 0"
+                    Content="Bún ốc nhồi"
+                    Height="20"
+                    Width="100"
+                    ></Button>
+            <Button x:Name="exit4Button" 
+                    Background="{DynamicResource ButtonExitBackgroundColor}"
+                    Foreground="{DynamicResource NgocTrinhForegroundColor}"
+                    BorderBrush="{DynamicResource ButtonExitBorderColor}"
+                    Margin="0 10 0 0"
+                    Content="Bún riêu cua"
+                    Height="20"
+                    Width="100"
+                    ></Button>
+            <Button x:Name="btnChangeResoure2" Content="Change Resource" Width="100" Height="50"
+                    Margin="10" Click="btnChangeResoure2_Click">
+                
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

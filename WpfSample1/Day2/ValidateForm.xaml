@@ -1,0 +1,87 @@
+﻿<Window x:Class="WpfSample1.Day2.ValidateForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSample1.Day2"
+        mc:Ignorable="d"
+        Title="ValidateForm" Height="600" Width="1200">
+    <Grid Height="350" Width="525" Background="Bisque">
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="10, 5, 0, 0"
+                   Name="txtBlockHeading" Text="Đăng ký khách hàng"
+                   VerticalAlignment="Top" Width="200" FontSize="17"
+                   FontStretch="ExtraCondensed"></TextBlock>
+        <Grid Margin="30, 0,30, 25" Background="White" Height="264" VerticalAlignment="Bottom">
+            <Grid.Resources >
+                <Style TargetType="Border" >
+                    <Setter Property="Padding" Value="5,5,5,5" />
+                </Style>
+            </Grid.Resources>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25*"></RowDefinition>
+                <RowDefinition Height="250*"></RowDefinition>
+                <RowDefinition Height="40*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Height="20" HorizontalAlignment="Left" 
+                       x:Name="errorMessage" VerticalAlignment="Top"
+                       Width="247" OpacityMask="Crimson" Foreground="#FFE5572C"></TextBlock>
+            <StackPanel Grid.Row="1" Grid.Column="0" >
+                <TextBlock Height="23" HorizontalAlignment="Left" 
+                       x:Name="txtbFirstName" 
+                       Text="First Name"
+                       Width="247" Margin="5"></TextBlock>
+                <TextBlock Height="23" HorizontalAlignment="Left" 
+                       x:Name="txtbLastName" 
+                       Text="Last Name"
+                       Width="247" Margin="5"></TextBlock>
+                <TextBlock Height="23" HorizontalAlignment="Left" 
+                       x:Name="txtbEmailId" 
+                       Text="Email Id"
+                       Width="247" Margin="5"></TextBlock>
+                <TextBlock Height="23" HorizontalAlignment="Left" 
+                       x:Name="txtbPassword" 
+                       Text="Password"
+                       Width="247" Margin="5"></TextBlock>
+                <TextBlock Height="23" HorizontalAlignment="Left" 
+                       x:Name="txtbConfirmPassword" 
+                       Text="Confirm Password"
+                       Width="247" Margin="5"></TextBlock>
+                <TextBlock Height="23" HorizontalAlignment="Left" 
+                       x:Name="txtbAddress" 
+                       Text="Address"
+                       Width="247" Margin="5"></TextBlock>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="1" Margin="0 ,0 , 10 , 0">
+             
+                <TextBox Height="23" HorizontalAlignment="Left" 
+                       x:Name="txtFirstName" 
+                       Width="200" Margin="5"></TextBox>
+                <TextBox Height="23" HorizontalAlignment="Left" 
+                       x:Name="txtLastName" 
+                       Width="200" Margin="5"></TextBox>
+                <TextBox Height="23" HorizontalAlignment="Left" 
+                       x:Name="txtEmailId" 
+                       Width="200" Margin="5"></TextBox>
+                <TextBox Height="23" HorizontalAlignment="Left" 
+                       x:Name="txtPassword" 
+                       Width="200" Margin="5"></TextBox>
+                <TextBox Height="23" HorizontalAlignment="Left" 
+                       x:Name="txtConfirmPassword" 
+                       Width="200" Margin="5"></TextBox>
+                <TextBox Height="23" HorizontalAlignment="Left" 
+                       x:Name="txtAddress" 
+                       Width="200" Margin="5"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Orientation="Horizontal"
+                        HorizontalAlignment="Right">
+                <Button Content="Submit" Name="btnSubmit" Width="70" Margin="5" Click="btnSubmit_Click"></Button>
+                <Button Content="Reset" Name="btnRest" Width="70" Margin="5" Click="btnRest_Click"></Button>
+                <Button Content="Cancel" Name="btnCancel" Width="70" Margin="5" Click="btnCancel_Click"></Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,11 @@
+﻿<Application x:Class="WpfSample1.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfSample1"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <BitmapImage x:Key="tieuvy1" UriSource="/Resources/Images/tieuvy1.jpg"></BitmapImage>
+        <BitmapImage x:Key="tieuvy2" UriSource="/Resources/Images/tieuvy2.jpg"></BitmapImage>
+        <BitmapImage x:Key="ghe" UriSource="/Resources/Images/ghehap2.jpg"></BitmapImage>
+    </Application.Resources>
+</Application>

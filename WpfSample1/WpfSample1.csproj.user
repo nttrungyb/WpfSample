@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Day1\ComboBoxSample1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Day1\DockPanel1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Day1\DockPanel2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Day1\GridLayout2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Day1\PersonInfoForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Day1\StackPanel1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Day1\StackPanel2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Day1\TabularGrid.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Day2\ControlDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Day2\DynamicResourceDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Day2\ResourceDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Day2\ValidateForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Day1\ComboBoxSample1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Day1\DockPanel1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Day1\DockPanel2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Day1\GridLayout2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Day1\PersonInfoForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Day1\StackPanel1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Day1\StackPanel2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Day1\TabularGrid.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Day2\ControlDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Day2\DynamicResourceDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Day2\ResourceDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Day2\ValidateForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

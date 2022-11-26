@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfSample1.Component.StackPanel1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSample1.Component"
+        mc:Ignorable="d"
+        Title="StackPanel1" Height="450" Width="450"
+        WindowStartupLocation="CenterOwner"
+        >
+    <StackPanel Name="mainStackPanel">
+        <TextBlock Text="Red 1" Background="Red"></TextBlock>
+        <TextBlock Text="Green 1" Background="Green"></TextBlock>
+        <StackPanel x:Name="subStackPanel" Orientation="Horizontal">
+            <Label Background="Red" Height="50" VerticalContentAlignment="Center">
+                Red 2
+            </Label>
+            <TextBlock Text="Green 2" Background="Green"></TextBlock>
+            <TextBlock Text="Blue 2" Background="Blue"></TextBlock>
+            <TextBlock Text="Yellow 2" Background="Yellow"></TextBlock>
+            <TextBlock Text="Orange 2" Background="Orange"></TextBlock>
+        </StackPanel>
+        <TextBlock Text="Blue 1" Background="Blue"></TextBlock>
+        <TextBlock Text="Yellow 1" Background="Yellow"></TextBlock>
+        <TextBlock Text="Orange 1" Background="Orange"></TextBlock>
+    </StackPanel>
+</Window>
