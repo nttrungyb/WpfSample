@@ -53,7 +53,7 @@ namespace WpfSample1.Component {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WpfSample1;V1.0.0.0;component/day1/tabulargrid.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WpfSample1;component/day1/tabulargrid.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Day1\TabularGrid.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

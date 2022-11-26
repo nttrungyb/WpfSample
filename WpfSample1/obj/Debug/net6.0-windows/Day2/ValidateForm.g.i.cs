@@ -189,7 +189,7 @@ namespace WpfSample1.Day2 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WpfSample1;V1.0.0.0;component/day2/validateform.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WpfSample1;component/day2/validateform.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Day2\ValidateForm.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

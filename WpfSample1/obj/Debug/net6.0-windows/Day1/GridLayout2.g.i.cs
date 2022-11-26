@@ -53,7 +53,7 @@ namespace WpfSample1.Component {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WpfSample1;V1.0.0.0;component/day1/gridlayout2.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WpfSample1;component/day1/gridlayout2.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Day1\GridLayout2.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

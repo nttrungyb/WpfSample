@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CODE\\WPF\\WpfSample1\\WpfSample1\\WpfSample1.csproj",
+      "projectUniqueName": "D:\\CODE\\WPF\\Git\\WpfSample\\WpfSample1\\WpfSample1.csproj",
       "projectName": "WpfSample1",
-      "projectPath": "D:\\CODE\\WPF\\WpfSample1\\WpfSample1\\WpfSample1.csproj",
+      "projectPath": "D:\\CODE\\WPF\\Git\\WpfSample\\WpfSample1\\WpfSample1.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "D:\\CODE\\WPF\\WpfSample1\\WpfSample1\\obj\\",
+      "outputPath": "D:\\CODE\\WPF\\Git\\WpfSample\\WpfSample1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
