@@ -40,6 +40,7 @@
                 <Button x:Name="button15" Content="Form Validation Showcase" Margin="10" Width="120" Height="30" Click="button15_Click"></Button>
                 <Button x:Name="button16" Content="Resource Showcase" Margin="10" Width="120" Height="30" Click="button16_Click"></Button>
                 <Button x:Name="button17" Content="Dynamic Resource" Margin="10" Width="120" Height="30" Click="button17_Click"></Button>
+                <Button x:Name="button18" Content="Dynamic Resource 2" Margin="10" Width="120" Height="30" Click="button18_Click"></Button>
 
 
             </StackPanel>

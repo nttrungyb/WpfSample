@@ -34,6 +34,9 @@
     <Compile Update="Day2\ControlDemo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Day2\DynamicResource2Sample.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Day2\DynamicResourceDemo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -70,6 +73,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Day2\ControlDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Day2\DynamicResource2Sample.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Day2\DynamicResourceDemo.xaml">

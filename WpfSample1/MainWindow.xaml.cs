@@ -126,5 +126,14 @@ namespace WpfSample1
             resourceForm.Owner = this;
             resourceForm.ShowDialog();
         }
+
+        private void button18_Click(object sender, RoutedEventArgs e)
+        {
+            DynamicResource2Sample resourceForm = new DynamicResource2Sample();
+            resourceForm.Owner = this;
+            resourceForm.ShowDialog();
+        }
+
+
     }
 }

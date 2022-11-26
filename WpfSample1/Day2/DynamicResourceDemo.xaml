@@ -12,6 +12,10 @@
         <SolidColorBrush x:Key="SolidBlack" Color="Black"></SolidColorBrush>
     </Window.Resources>
     <Grid x:Name="mainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
         <StackPanel VerticalAlignment="Center">
             <Button x:Name="submitButton"
                     Background="{StaticResource SolidAquamarine}"
@@ -58,7 +62,7 @@
                     ></Button>
             <Button x:Name="btnChangeResoure2" Content="Change Resource" Width="100" Height="50"
                     Margin="10" Click="btnChangeResoure2_Click">
-                
+
             </Button>
         </StackPanel>
     </Grid>
