@@ -50,6 +50,7 @@
             <StackPanel Margin="3" Name="stackPanel3" Orientation="Vertical">
                 <Label Margin="3" HorizontalAlignment="Center" FontWeight="Bold" >Day 3 - WPF Control Samples</Label>
                 <Button x:Name="btnDataBinding" Content="DataBiding Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
+                <Button x:Name="btnStyle1" Content="Style1 Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
                 
 
             </StackPanel>

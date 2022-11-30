@@ -102,3 +102,5 @@ D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Views\Login\Regist
 D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day3\DataTemplateDemo.g.cs
 D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day3\DataTemplateDemo.baml
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day3\Style1Demo.g.cs
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day3\Style1Demo.baml

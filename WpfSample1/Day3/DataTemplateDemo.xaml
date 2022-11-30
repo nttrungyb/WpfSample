@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:WpfSample1.Day3"
         xmlns:loc="clr-namespace:WpfSample1.Models"
         mc:Ignorable="d"
-        Title="DataTemplateDemo" Height="768" Width="1024">
+        Title="DataTemplateDemo" Height="500" Width="800"
+        WindowStartupLocation="CenterOwner">
     <Window.Resources>
         <DataTemplate DataType="{x:Type loc:Person}">
             <Grid>

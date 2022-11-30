@@ -1,0 +1,127 @@
+﻿<Window x:Class="WpfSample1.Day3.Style1Demo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSample1.Day3"
+        mc:Ignorable="d"
+        Title="Style1Demo" Height="450" Width="800"
+        WindowStartupLocation="CenterOwner">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Margin="10" VerticalAlignment="Top" Grid.Column="0">
+            <TextBlock>Control Style Level</TextBlock>
+            
+            <TextBlock Text="Ốc vòi voi hấp phomai bơ">
+                <TextBlock.Style>
+                    <Style>
+                        <Setter Property="TextBlock.FontSize" Value="24"></Setter>
+                        <Setter Property="TextBlock.Width" Value="400"></Setter>
+                        <Setter Property="TextBlock.Height" Value="40"></Setter>
+                        <Setter Property="TextBlock.Background" Value="DarkGoldenrod"></Setter>
+                        <Setter Property="TextBlock.Foreground" Value="WhiteSmoke"></Setter>
+                        <Setter Property="TextBlock.Margin" Value="10"></Setter>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+
+            <TextBlock Text="Tôm hùm nướng sốt BBQ">
+                <TextBlock.Style>
+                    <Style>
+                        <Setter Property="TextBlock.FontSize" Value="24"></Setter>
+                        <Setter Property="TextBlock.Width" Value="400"></Setter>
+                        <Setter Property="TextBlock.Height" Value="40"></Setter>
+                        <Setter Property="TextBlock.Background" Value="Aquamarine"></Setter>
+                        <Setter Property="TextBlock.Foreground" Value="Chocolate"></Setter>
+                        <Setter Property="TextBlock.Margin" Value="10"></Setter>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+
+            <TextBlock Text="Nhum biển nướng mỡ hành">
+                <TextBlock.Style>
+                    <Style>
+                        <Setter Property="TextBlock.FontSize" Value="24"></Setter>
+                        <Setter Property="TextBlock.Width" Value="400"></Setter>
+                        <Setter Property="TextBlock.Height" Value="40"></Setter>
+                        <Setter Property="TextBlock.Background" Value="DarkKhaki"></Setter>
+                        <Setter Property="TextBlock.Foreground" Value="Honeydew"></Setter>
+                        <Setter Property="TextBlock.Margin" Value="10"></Setter>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+
+            <Button Content="Đăng ký VIP Member">
+                <Button.Style>
+                    <Style>
+
+                        <Setter Property="Button.Width" Value="200"></Setter>
+                        <Setter Property="Button.Height" Value="40"></Setter>
+                        <Setter Property="Button.Background" Value="BlueViolet"></Setter>
+                        <Setter Property="Button.Foreground" Value="LightGreen"></Setter>
+                        <Setter Property="Button.Margin" Value="20"></Setter>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+            <Button Content="Nhập lại" Width="100"></Button>
+
+        </StackPanel>
+
+
+        <StackPanel Margin="10" VerticalAlignment="Top" Grid.Column="1">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Button.FontSize" Value="24"></Setter>
+                        <Setter Property="Button.Background" Value="Goldenrod"></Setter>
+                        <Setter Property="Button.Foreground" Value="MediumPurple"></Setter>
+                        <Setter Property="Button.Margin" Value="10"></Setter>
+                </Style>
+
+                <Style x:Key="normalTextBlock">
+                    <Setter Property="TextBlock.FontSize" Value="30"></Setter>
+                    <Setter Property="TextBlock.Foreground" Value="LimeGreen"></Setter>
+                    <Setter Property="TextBlock.FontStyle" Value="Italic"></Setter>
+                    <Setter Property="TextBlock.FontWeight" Value="Bold"></Setter>
+                </Style>
+            </StackPanel.Resources>
+
+            <TextBlock> Layout Style Level</TextBlock>
+
+            <TextBlock Text="Các món tôm" Style="{StaticResource normalTextBlock}">
+              
+            </TextBlock>
+
+            <Button Content="Tôm hùm nướng sốt BBQ">
+              
+            </Button>
+
+            <Button Content="Nhum biển nướng mỡ hành">
+                
+            </Button>
+
+            <Button Content="Tôm mũ ni bỏ lò phômai">
+                
+            </Button>
+
+            <Button Content="Tôm sú nướng muối ớt"></Button>
+            <Button Content="Tôm tích (bề bề) hấp sả"></Button>
+            <Button >
+                <TextBlock Style="{StaticResource normalTextBlock}">
+                    Button với nội dung là TextBlock
+                </TextBlock>
+            </Button>
+
+        </StackPanel>
+    </Grid>
+    
+   
+</Window>

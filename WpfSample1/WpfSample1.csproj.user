@@ -52,6 +52,9 @@
     <Compile Update="Day3\DataTemplateDemo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Day3\Style1Demo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Layouts\MainLayout.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -106,6 +109,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Day3\DataTemplateDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Day3\Style1Demo.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

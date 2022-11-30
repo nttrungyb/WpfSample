@@ -143,49 +143,56 @@ namespace WpfSample1.Views.Layouts
             if (sender == btnControlTemplate)
             {
                 ControlTemplateDemo form = new ControlTemplateDemo();
-                //form.Owner = this;
+                form.Owner = mainWindow;
                 form.ShowDialog();
             }
 
             if (sender == btnDynamicResource2)
             {
                 DynamicResource2Sample form = new DynamicResource2Sample();
-                //form.Owner = this;
+                form.Owner = mainWindow;
                 form.ShowDialog();
             }
 
             if (sender == btnDynamicResource)
             {
                 DynamicResourceDemo form = new DynamicResourceDemo();
-                //form.Owner = this;
+                form.Owner = mainWindow;
                 form.ShowDialog();
             }
 
             if (sender == btnStaticResource)
             {
                 ResourceDemo form = new ResourceDemo();
-                //form.Owner = this;
+                form.Owner = mainWindow;
                 form.ShowDialog();
             }
 
             if (sender == btnFormValidation)
             {
                 ValidateForm form = new ValidateForm();
-                //form.Owner = this;
+                form.Owner = mainWindow;
                 form.ShowDialog();
             }
 
             if (sender == btnControlShowcase)
             {
                 ControlDemo form = new ControlDemo();
-                //form.Owner = this;
+                form.Owner = mainWindow;
                 form.ShowDialog();
             }
 
             if (sender == btnDataBinding)
             {
                 DataTemplateDemo form = new DataTemplateDemo();
-                //form.Owner = this;
+                form.Owner = mainWindow;
+                form.ShowDialog();
+            }
+
+            if (sender == btnStyle1)
+            {
+                Style1Demo form = new Style1Demo();
+                form.Owner = mainWindow;
                 form.ShowDialog();
             }
 
