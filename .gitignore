@@ -8,9 +8,6 @@ WpfSample1/bin/
 WpfSample1/obj/
 
 WpfSample1/bin/Debug/
-
 WpfSample1/bin/Debug/net6.0-windows/
 
 *.dll
-WpfSample1/bin/Debug/net6.0-windows/WpfSample1.dll
-WpfSample1/bin/Debug/net6.0-windows/WpfSample1.pdb
