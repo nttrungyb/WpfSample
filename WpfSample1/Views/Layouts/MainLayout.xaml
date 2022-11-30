@@ -10,7 +10,7 @@
 
     <DockPanel>
         <StackPanel DockPanel.Dock="Top">
-            <TextBlock Text="Bài tập thực hành" TextAlignment="Center" FontWeight="Bold" FontSize="24"></TextBlock>
+            <!--<TextBlock Text="Bài tập thực hành" TextAlignment="Center" FontWeight="Bold" FontSize="24"></TextBlock>-->
         </StackPanel>
         <StackPanel Orientation="Horizontal" DockPanel.Dock="Bottom">
 
@@ -51,6 +51,7 @@
                 <Label Margin="3" HorizontalAlignment="Center" FontWeight="Bold" >Day 3 - WPF Control Samples</Label>
                 <Button x:Name="btnDataBinding" Content="DataBiding Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
                 <Button x:Name="btnStyle1" Content="Style1 Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
+                <Button x:Name="btnI18N" Content="I18N Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
                 
 
             </StackPanel>

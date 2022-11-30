@@ -196,6 +196,13 @@ namespace WpfSample1.Views.Layouts
                 form.ShowDialog();
             }
 
+            if (sender == btnI18N)
+            {
+                I18NDemo form = new I18NDemo();
+                form.Owner = mainWindow;
+                form.ShowDialog();
+            }
+
         }
     }
 }

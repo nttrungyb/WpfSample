@@ -9,6 +9,14 @@
       "WpfSample1/1.0.0": {
         "runtime": {
           "WpfSample1.dll": {}
+        },
+        "resources": {
+          "fr-FR/WpfSample1.resources.dll": {
+            "locale": "fr-FR"
+          },
+          "th-TH/WpfSample1.resources.dll": {
+            "locale": "th-TH"
+          }
         }
       }
     }

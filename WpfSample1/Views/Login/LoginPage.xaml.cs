@@ -27,7 +27,7 @@ namespace WpfSample1.Views.Login
         public LoginPage(MainWindow mainWindow)
         {
             InitializeComponent();
-            this.mainWindow = mainWindow;   
+            this.mainWindow = mainWindow;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -49,7 +49,19 @@ namespace WpfSample1.Views.Login
             else
             {
                 string email = txEmailId.Text;
-                string password = txtPassword.Password;                
+                string password = txtPassword.Password;
+
+                if (email.Equals("nttrungyb@gmail.com") && password.Equals("123"))
+                {
+                    mainWindow.DoLogin();
+                    mainWindow.ShowMainLayout();
+                    mainWindow.Activate();
+                }    
+                else
+                {
+                    errormessage.Text = "Invalid username or password!";
+                    txEmailId.Focus();
+                }    
             }
         }
 
@@ -57,7 +69,7 @@ namespace WpfSample1.Views.Login
         {
             RegisterPage _registerPage = new RegisterPage(mainWindow);
             mainWindow.DisplayLayout(_registerPage);
-            
+
         }
     }
 }

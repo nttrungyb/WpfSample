@@ -25,25 +25,64 @@ namespace WpfSample1
     public partial class MainWindow : Window
     {
 
-        LoginPage loginPage ;
+        LoginPage loginPage;
+        Page currentPage;
 
         public MainWindow()
         {
             InitializeComponent();
-            MainLayout mainLayout = new MainLayout(this);
-            // loginPage = new LoginPage(this);
-            //frmMainContent.Navigate(loginPage);
+            //MainLayout mainLayout = new MainLayout(this);
+            loginPage = new LoginPage(this);
+            frmMainContent.Navigate(loginPage);
             //RegisterPage registerPage = new RegisterPage(this);
             //frmMainContent.Navigate(registerPage);
-            frmMainContent.Navigate(mainLayout);
+            //frmMainContent.Navigate(mainLayout);
+            ApplicationContext.IsLogged = false;
+            this.DataContext = this;
 
         }
 
         public bool DisplayLayout(Page layout)
         {
             frmMainContent.Navigate(layout);
+            currentPage = layout;
             return true;    
         }
 
+        public bool ShowMainLayout()
+        {
+            MainLayout mainLayout = new MainLayout(this);
+            frmMainContent.Navigate(mainLayout);
+            currentPage = mainLayout;
+            return true;
+        }
+
+        private void Login_Click(object sender, RoutedEventArgs e)
+        {
+            if (ApplicationContext.IsLogged)
+            {
+                ApplicationContext.IsLogged = false;
+                btnLogin.Content = "Login";
+                DisplayLayout(loginPage);  
+            }
+            else
+            {
+                if (currentPage != loginPage)
+                {
+                    loginPage = new LoginPage(this);
+                    currentPage = loginPage;
+                    frmMainContent.Navigate(loginPage);
+                }
+            } 
+            
+            
+        }
+
+        public void DoLogin()
+        {
+            ApplicationContext.IsLogged = true;
+            btnLogin.Content = "Logout";
+           
+        }
     }
 }

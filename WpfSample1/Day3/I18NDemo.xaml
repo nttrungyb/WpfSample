@@ -1,0 +1,53 @@
+﻿<Window x:Class="WpfSample1.Day3.I18NDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSample1.Day3"
+        xmlns:p="clr-namespace:WpfSample1.Properties"
+        mc:Ignorable="d"
+        Height="350" Width="700" Title="{x:Static p:Resources.Title}"
+        WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="5*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="8*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.ColumnSpan="2">
+            <Button x:Name="btnSaveButton" Content="{x:Static p:Resources.Save_Button}" Width="75" Margin="5"></Button>
+            <Button x:Name="btnResetButton" Content="{x:Static p:Resources.Reset_Button}" Width="75" Margin="5"></Button>
+            <Button x:Name="btnTodayButton" Content="{x:Static p:Resources.Today_Message}" Width="75" Margin="5"></Button>
+            <Button x:Name="btnFrench" Content="French" Width="75" Margin="5" Click="LanguageChange_Click"></Button>
+            <Button x:Name="btnJapan" Content="Japanese" Width="75" Margin="5" Click="LanguageChange_Click"></Button>
+            <Button x:Name="btnThaiLand" Content="ThaiLand" Width="75" Margin="5" Click="LanguageChange_Click"></Button>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <StackPanel.Resources>
+                <Style TargetType="TextBox">
+                    <Setter Property="Margin" Value="5"></Setter>
+                </Style>
+            </StackPanel.Resources>
+            
+            <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="23" Text="{x:Static p:Resources.Name}" ></TextBox>
+            <TextBox x:Name="txtAddress" HorizontalAlignment="Left" Height="23" Text="{x:Static p:Resources.Address}" ></TextBox>
+            <TextBox x:Name="txtSeafood" HorizontalAlignment="Left" Height="23" Text="{x:Static p:Resources.Seafood}" ></TextBox>
+            <TextBox x:Name="txtNow" HorizontalAlignment="Left" Height="23" Text="{x:Static p:Resources.Today_Message}" ></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <StackPanel.Resources>
+                <Style TargetType="Label">
+                    <Setter Property="Margin" Value="5"></Setter>
+                </Style>
+            </StackPanel.Resources>
+            <Label x:Name="lblName" HorizontalAlignment="Left" Height="23" Content="Họ và tên" ></Label>
+            <Label x:Name="lblAddress" HorizontalAlignment="Left" Height="23" Content="Địa chỉ" ></Label>
+            <Label x:Name="lblSeafood" HorizontalAlignment="Left" Height="23" Content="Hải sản" ></Label>
+            <Label x:Name="lblNow" HorizontalAlignment="Left" Height="23" Content="" ></Label>
+        </StackPanel>
+       
+    </Grid>
+</Window>

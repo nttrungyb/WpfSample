@@ -104,3 +104,14 @@ D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\GeneratedInternalT
 D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day3\DataTemplateDemo.baml
 D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day3\Style1Demo.g.cs
 D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day3\Style1Demo.baml
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\WpfSample1.csproj.GenerateResource.cache
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day3\I18NDemo.g.cs
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day3\I18NDemo.baml
+D:\CODE\WPF\Git\WpfSample\WpfSample1\bin\Debug\net6.0-windows\th-TH\WpfSample1.resources.dll
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\WpfSample1.Properties.Resources.resources
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\WpfSample1.Properties.Resources.th-TH.resources
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\th-TH\WpfSample1.resources.dll
+D:\CODE\WPF\Git\WpfSample\WpfSample1\bin\Debug\net6.0-windows\fr-FR\WpfSample1.resources.dll
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\WpfSample1.Properties.Resources.jp-JP.resources
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\WpfSample1.Properties.Resources.fr-FR.resources
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\fr-FR\WpfSample1.resources.dll
