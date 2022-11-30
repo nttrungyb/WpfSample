@@ -49,6 +49,18 @@
     <Compile Update="Day2\ValidateForm.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Day3\DataTemplateDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Layouts\MainLayout.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Login\LoginPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Login\RegisterPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Day1\ComboBoxSample1.xaml">
@@ -93,7 +105,19 @@
     <Page Update="Day2\ValidateForm.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Day3\DataTemplateDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Layouts\MainLayout.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Login\LoginPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Login\RegisterPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

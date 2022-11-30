@@ -5,54 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfSample1"
         mc:Ignorable="d"
-        Title="WPF Panel Samples" Height="450" Width="800" 
+        Title="WPF Panel Samples" Height="768" Width="1024" 
         WindowState="Maximized">
 
+
     <DockPanel>
-        <StackPanel DockPanel.Dock="Top">
-            <TextBlock Text="Bài tập thực hành" TextAlignment="Center" FontWeight="Bold" FontSize="24"></TextBlock>
-        </StackPanel>
-        <StackPanel Orientation="Horizontal" DockPanel.Dock="Bottom">
-
-            <StackPanel Margin="3" Name="stackPanel1" Orientation="Vertical">
-                <Label Margin="3" HorizontalAlignment="Center" FontWeight="Bold" >Day 1 - WPF Panel Samples</Label>
-
-                <Button x:Name="button6" Content="Show stack panel 1" Margin="10" Width="120" Height="30" Click="ShowPanel1"></Button>
-                <Button x:Name="button7" Content="Show stack panel 2" Margin="10" Width="120" Height="30" Click="button7_Click"></Button>
-                <Button x:Name="button8" Content="Show dock panel 1" Margin="10" Width="120" Height="30" Click="button8_Click"></Button>
-                <Button x:Name="button9" Content="Show dock panel 2" Margin="10" Width="120" Height="30" Click="button9_Click"></Button>
-                <Button x:Name="button10" Content="Grid layout 1" Margin="10" Width="120" Height="30" Click="button10_Click"></Button>
-                <Button x:Name="button11" Content="Grid layout 2" Margin="10" Width="120" Height="30" Click="button11_Click"></Button>
-                <Button x:Name="button12" Content="Person Form" Margin="10" Width="120" Height="30" Click="button12_Click"></Button>
-                <Button x:Name="button13" Content="ComboBox showcase 1" Margin="10" Width="120" Height="30" Click="button13_Click"></Button>
-
-                <CheckBox Name="chkVertial" IsChecked="True" Margin="10" HorizontalAlignment="Center" Checked="chkVertial_Checked" Unchecked="chkVertial_Unchecked">
-                    Use vertical orientation
-                </CheckBox>
-
-
-
-            </StackPanel>
-
-            <StackPanel Margin="3" Name="stackPanel2" Orientation="Vertical">
-                <Label Margin="3" HorizontalAlignment="Center" FontWeight="Bold" >Day 2 - WPF Control Samples</Label>
-                <Button x:Name="btnControlShowcase" Content="Control Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
-                <Button x:Name="btnFormValidation" Content="Form Validation Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
-                <Button x:Name="btnStaticResource" Content="Static Resource" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
-                <Button x:Name="btnDynamicResource" Content="Dynamic Resource" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
-                <Button x:Name="btnDynamicResource2" Content="Dynamic Resource 2" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
-                <Button x:Name="btnControlTemplate" Content="Control Template" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
-
-
-            </StackPanel>
-
-        </StackPanel>
-
+        <TextBlock DockPanel.Dock="Top" TextAlignment="Center">Title Bar</TextBlock>
+        <TextBlock DockPanel.Dock="Bottom" TextAlignment="Center">Status Bar</TextBlock>
+        <Frame x:Name="frmMainContent" NavigationUIVisibility="Hidden">
+        </Frame>
     </DockPanel>
     
-    
-    
-        
-    
-    
+
 </Window>

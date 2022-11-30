@@ -1,0 +1,76 @@
+﻿<Window x:Class="WpfSample1.Day3.DataTemplateDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSample1.Day3"
+        xmlns:loc="clr-namespace:WpfSample1.Models"
+        mc:Ignorable="d"
+        Title="DataTemplateDemo" Height="768" Width="1024">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type loc:Person}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="200"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="lblName" Margin="10"></Label>
+                <TextBox x:Name="txtName" Grid.Column="1" Margin="10" Text="{Binding Name}"></TextBox>
+                <Label x:Name="lblAge" Margin="10" Grid.Row="1"></Label>
+                <TextBox x:Name="txtAge" Grid.Row="1" Grid.Column="1" Margin="10" Text="{Binding Age}"></TextBox>
+            </Grid>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="lsbPerson" ItemsSource="{Binding}" Grid.Row="0" Grid.Column="0"></ListBox>
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <Canvas>
+                <Button Name="btn" Content="Messi - Ronaldo - Lewandoski - Neymar" Canvas.Left="100"
+                        Canvas.Top="100">
+                    <Button.RenderTransform>
+                        <ScaleTransform
+                            ScaleX="{Binding ElementName=srclX, Path=Value}"
+                            ScaleY="{Binding ElementName=srclY, Path=Value}"
+                            CenterX="{Binding ElementName=srclCTX, Path=Value}"
+                            CenterY="{Binding ElementName=srclCTY, Path=Value}"
+                            >
+                            
+                        </ScaleTransform>
+                    </Button.RenderTransform>
+                </Button>
+            </Canvas>
+            <TextBlock Text="{Binding }"></TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2">
+            <Button Content="Hiển thị" Click="Button_Click" Width="80" HorizontalAlignment="Left" Margin="10"></Button>
+            <Label Content="ScaleX"></Label>
+            <ScrollBar x:Name="srclX" Orientation="Horizontal" Value="1" Minimum="-20" Maximum="20"></ScrollBar>
+            <TextBlock HorizontalAlignment="Center" Text="{Binding ElementName=srclX, Path=Value}"></TextBlock>
+
+            <Label Content="ScaleY"></Label>
+            <ScrollBar x:Name="srclY" Orientation="Horizontal" Value="1" Minimum="-20" Maximum="20"></ScrollBar>
+            <TextBlock HorizontalAlignment="Center" Text="{Binding ElementName=srclY, Path=Value}"></TextBlock>
+
+            <Label Content="CenterX"></Label>
+            <ScrollBar x:Name="srclCTX" Orientation="Horizontal" Value="0" Minimum="-100" Maximum="100"></ScrollBar>
+            <TextBlock HorizontalAlignment="Center" Margin="12" Text="{Binding ElementName=srclCTX, Path=Value}"></TextBlock>
+
+            <Label Content="CenterY"></Label>
+            <ScrollBar x:Name="srclCTY" Orientation="Horizontal" Value="0" Minimum="-100" Maximum="100"></ScrollBar>
+            <TextBlock HorizontalAlignment="Center" Margin="12" Text="{Binding ElementName=srclCTY, Path=Value}"></TextBlock>
+        </StackPanel>
+        
+    </Grid>
+</Window>
