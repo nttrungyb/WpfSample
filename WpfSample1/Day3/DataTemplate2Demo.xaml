@@ -3,15 +3,38 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfSample1.Day3"
+        xmlns:local="clr-namespace:WpfSample1.Models"
         mc:Ignorable="d"
-        Title="DataTemplate2Demo" Height="450" Width="800">
+        Title="DataTemplate2Demo" Height="450" Width="800"
+        WindowStartupLocation="CenterOwner">
 
     <Window.Resources>
-        
+        <local:People x:Key="MyFriends"></local:People>
+        <DataTemplate x:Key="DetailTemplate">
+            <StackPanel>
+                <StackPanel.Resources>
+                    <Style x:Key="myStyle">
+                        <Setter Property="Control.FontSize" Value="18"></Setter>
+                        <Setter Property="Control.Foreground" Value="LimeGreen"></Setter>
+                        <Setter Property="Control.HorizontalAlignment" Value="Left"></Setter>
+                    </Style>
+                </StackPanel.Resources>
+                <TextBlock Text="Họ tên:"></TextBlock>
+                <TextBlock Style="{StaticResource myStyle}" Text="{Binding Path=FullName}"></TextBlock>
+
+                <TextBlock Text="Địa chỉ:"></TextBlock>
+                <TextBlock Style="{StaticResource myStyle}" Text="{Binding Path=Address}"></TextBlock>
+
+                <TextBlock Text="Giá:"></TextBlock>
+                <TextBlock Style="{StaticResource myStyle}" Text="{Binding Path=Price}"></TextBlock>
+            </StackPanel>
+        </DataTemplate>
     </Window.Resources>
     
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <TextBlock>Danh sách nhân viên:</TextBlock>
+        <ListBox Width="200" IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding Source={StaticResource MyFriends}}"></ListBox>
+        <TextBlock>Thông tin nhân viên:</TextBlock>
+        <ContentControl HorizontalAlignment="Center" Content="{Binding Source={StaticResource MyFriends}}" ContentTemplate="{StaticResource DetailTemplate}"></ContentControl>
+    </StackPanel>
 </Window>

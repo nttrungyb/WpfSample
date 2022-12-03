@@ -5,47 +5,69 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WpfSample1.Views.Login"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="768" d:DesignWidth="1024"
       Title="LoginPage">
 
-    <Grid Width="426" Background="Bisque">
-        <TextBlock Height="23" HorizontalAlignment="Left" Margin="10,10,0,0" Name="LoginHeading" Text="Login Page in WPF" VerticalAlignment="Top" FontSize="17" FontStretch="ExtraCondensed" TextElement.FontFamily="Verdana" TextElement.FontSize="18" TextElement.FontStyle="Italic"/>
-
-        <TextBlock Height="50" HorizontalAlignment="Left" Margin="24,48,0,0" Name="textBlockHeading" VerticalAlignment="Top" FontSize="12" FontStyle="Italic" Padding="5">
-
-Note: Please login here to view the features of this site. If you are new on this site then <LineBreak /><!--line break-->
-
-please click on
-
-<!--textblock as a Hyperlink.-->
-
-<TextBlock>
-
-<Hyperlink  FontSize="14" FontStyle="Normal" Click="Hyperlink_Click">Register</Hyperlink>
-</TextBlock>
-<!--end textblock as a hyperlink-->
-
-</TextBlock>
-        <StackPanel Margin="10,100,5,23" Background="Bisque" >
-            <!--<! —For EmailId-->
-            <Label Target="{Binding ElementName=txEmailId}">
-                <StackPanel Orientation="Horizontal">
-                    <Image Source="/Resources/Images/email.png" Width="20" />
-                    <AccessText Text="_Email:" />
+    <Grid Width="500" Height="227" Background="GhostWhite" Margin="0 0 0 200">
+        <Border BorderBrush="Gainsboro" BorderThickness="1" CornerRadius="3,3,3,3">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Center">
+                    <Image Source="/Resources/Images/security.png" Height="40" Width="40" />
                 </StackPanel>
-            </Label>
-
-            <TextBox Name="txEmailId" Margin="99,-25,0,0" />
-            <!--<! —For Password-->
-            <Label Target="{Binding ElementName=txtPassword}">
-                <StackPanel Orientation="Horizontal">
-                    <Image Source="/Resources/Images/password.png" Height="20" Width="22" />
-                    <AccessText Text="_Password:" />
+                <StackPanel Grid.Row="0" Grid.Column="1">
+                    <Label Content="Pos:"></Label>
+                    <ComboBox Width="150" HorizontalAlignment="Left">
+                        <ComboBoxItem>ComboBox Item #1</ComboBoxItem>
+                        <ComboBoxItem IsSelected="True">ComboBox Item #2</ComboBoxItem>
+                        <ComboBoxItem>ComboBox Item #3</ComboBoxItem>
+                    </ComboBox>
                 </StackPanel>
-            </Label>
-            <PasswordBox Name="txtPassword" PasswordChar="*" MaxLength="10" Margin="99,-25,0,0" />
-            <Button Content="Login" Margin="150,10,0,0" Width="100" Click="Button_Click"></Button>
-            <TextBlock Height="23" HorizontalAlignment="Left" x:Name ="errormessage" VerticalAlignment="Top" Width="247" Margin="110,25,0,0"  OpacityMask="Crimson" Foreground="#FFE5572C"  />
-        </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="2" Margin="10 0 0 0">
+                    <Label Content="Điểm giao dịch:"></Label>
+                    <ComboBox Width="150" HorizontalAlignment="Left">
+                        <ComboBoxItem>ComboBox Item #1</ComboBoxItem>
+                        <ComboBoxItem IsSelected="True">ComboBox Item #2</ComboBoxItem>
+                        <ComboBoxItem>ComboBox Item #3</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+                <Label Target="{Binding ElementName=txtEmailId}" Content="Tài khoản: "
+                       Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">
+                </Label>
+                <TextBox Name="txtEmailId" Text="nttrungyb@gmail.com" Width="150" Height="25" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left"
+                         VerticalContentAlignment="Center"/>
+                <PasswordBox Name="txtPassword" PasswordChar="*" Width="150" Height="25" Grid.Column="2" Grid.Row="1"
+HorizontalAlignment="Left" Margin="10 0 0 0" VerticalContentAlignment="Center" />
+                <Label Content="Ip máy chủ: "
+                       Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center">
+                </Label>
+                <StackPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left">
+                    <TextBox Name="txtIpAddress" Width="150" Height="25" VerticalContentAlignment="Center"/>
+                    <TextBlock Text="Kiểm tra kết nối" Margin="0 5 0 0"></TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left">
+                    <StackPanel Orientation="Horizontal" Margin="10 0 0 0">
+                        <TextBlock>Ngày giao dịch:</TextBlock>
+                        <DatePicker></DatePicker>
+                    </StackPanel>
+                    <TextBlock  Text="Ngày giao dịch" Margin="10 5 5 0" HorizontalAlignment="Right"></TextBlock>
+                </StackPanel>
+                <TextBlock Height="25" x:Name="errorMessage" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"></TextBlock>
+                <StackPanel Margin="10 0 0 0" Grid.Row="3" Grid.Column="3" Orientation="Horizontal" >
+                    <Button Content="Đăng nhập" Width="80" Margin="0 0 20 0" Height="25" Click="Login"></Button>
+                    <Button Content="Hủy" Width="80" Margin="0 0 20 0" Height="25"></Button>
+                </StackPanel>
+            </Grid>
+        </Border>
     </Grid>
 </Page>

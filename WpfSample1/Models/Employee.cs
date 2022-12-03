@@ -10,8 +10,8 @@ namespace WpfSample1.Models
     public class Employee : INotifyPropertyChanged
     {
         public int Price { get; set; }
-        private string FullName { get; set; }
-        private string Address { get; set; }
+        public string FullName { get; set; }
+        public string Address { get; set; }
 
         public event PropertyChangedEventHandler? PropertyChanged;
 

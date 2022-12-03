@@ -49,6 +49,9 @@
     <Compile Update="Day2\ValidateForm.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Day3\DataTemplate2Demo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Day3\DataTemplateDemo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -65,6 +68,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\Login\RegisterPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Menu\MenuPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -111,6 +117,9 @@
     <Page Update="Day2\ValidateForm.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Day3\DataTemplate2Demo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Day3\DataTemplateDemo.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -130,6 +139,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Login\RegisterPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Menu\MenuPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

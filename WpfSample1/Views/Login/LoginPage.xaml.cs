@@ -28,39 +28,40 @@ namespace WpfSample1.Views.Login
         {
             InitializeComponent();
             this.mainWindow = mainWindow;
+            txtPassword.Password = "123";
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Login(object sender, RoutedEventArgs e)
         {
-            if (txEmailId.Text.Length == 0)
+            if (txtEmailId.Text.Length == 0)
             {
-                errormessage.Text = "Enter an Email";
-                txEmailId.Focus();
+                errorMessage.Text = "Enter an Email";
+                txtEmailId.Focus();
             }
 
-            else if (!Regex.IsMatch(txEmailId.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
+            else if (!Regex.IsMatch(txtEmailId.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
             {
 
-                errormessage.Text = "Enter a valid email.";
-                txEmailId.Select(0, txEmailId.Text.Length);
-                txEmailId.Focus();
+                errorMessage.Text = "Enter a valid email.";
+                txtEmailId.Select(0, txtEmailId.Text.Length);
+                txtEmailId.Focus();
             }
 
             else
             {
-                string email = txEmailId.Text;
+                string email = txtEmailId.Text;
                 string password = txtPassword.Password;
 
                 if (email.Equals("nttrungyb@gmail.com") && password.Equals("123"))
                 {
-                    mainWindow.DoLogin();
+                    mainWindow.DoLoginLogout();
                     mainWindow.ShowMainLayout();
                     mainWindow.Activate();
                 }    
                 else
                 {
-                    errormessage.Text = "Invalid username or password!";
-                    txEmailId.Focus();
+                    errorMessage.Text = "Invalid username or password!";
+                    txtEmailId.Focus();
                 }    
             }
         }

@@ -8,6 +8,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Images\1-edit.png" />
+    <None Remove="Resources\Images\1-new-items.png" />
+    <None Remove="Resources\Images\143748-200.png" />
+    <None Remove="Resources\Images\143748-2002.png" />
+    <None Remove="Resources\Images\application.ico" />
+    <None Remove="Resources\Images\application.png" />
+    <None Remove="Resources\Images\bod.png" />
+    <None Remove="Resources\Images\close.png" />
+    <None Remove="Resources\Images\close1.jpg" />
+    <None Remove="Resources\Images\CustomerPicture.png" />
+    <None Remove="Resources\Images\email.png" />
+    <None Remove="Resources\Images\eod.png" />
+    <None Remove="Resources\Images\excel-icon.png" />
+    <None Remove="Resources\Images\excel1.png" />
+    <None Remove="Resources\Images\find.ico" />
+    <None Remove="Resources\Images\find1.ico" />
+    <None Remove="Resources\Images\FingerPrintTemplate.png" />
     <None Remove="Resources\Images\gallery_photo_11.jpg" />
     <None Remove="Resources\Images\gallery_photo_12.jpg" />
     <None Remove="Resources\Images\gallery_photo_6.jpg" />
@@ -15,8 +32,14 @@
     <None Remove="Resources\Images\gallery_photo_8.jpg" />
     <None Remove="Resources\Images\ghe.jpg" />
     <None Remove="Resources\Images\ghehap2.jpg" />
+    <None Remove="Resources\Images\Globe21.png" />
+    <None Remove="Resources\Images\Globe22.png" />
     <None Remove="Resources\Images\haubolophomai.jpg" />
     <None Remove="Resources\Images\hauphomai.jpg" />
+    <None Remove="Resources\Images\help.png" />
+    <None Remove="Resources\Images\history.ico" />
+    <None Remove="Resources\Images\Home.png" />
+    <None Remove="Resources\Images\Home1.png" />
     <None Remove="Resources\Images\Huong-dan-cach-lam-tom-nuong-pho-mai.jpg" />
     <None Remove="Resources\Images\laucachinh1.jpg" />
     <None Remove="Resources\Images\lobster-platter-for-2-15821068008931789087195.jpg" />
@@ -33,12 +56,21 @@
     <None Remove="Resources\Images\ocmongtay3.jpg" />
     <None Remove="Resources\Images\ocmongtaynuong.jpg" />
     <None Remove="Resources\Images\ocvoivoi.jpg" />
+    <None Remove="Resources\Images\password.png" />
+    <None Remove="Resources\Images\report.png" />
+    <None Remove="Resources\Images\report2.png" />
+    <None Remove="Resources\Images\search.png" />
+    <None Remove="Resources\Images\security.png" />
     <None Remove="Resources\Images\sena.jpg" />
     <None Remove="Resources\Images\senb.jpg" />
     <None Remove="Resources\Images\senc.jpg" />
     <None Remove="Resources\Images\send.jpg" />
+    <None Remove="Resources\Images\signature.png" />
     <None Remove="Resources\Images\sochen.jpg" />
     <None Remove="Resources\Images\sonuongmohanh.jpg" />
+    <None Remove="Resources\Images\system.png" />
+    <None Remove="Resources\Images\system1.png" />
+    <None Remove="Resources\Images\tick_16_16.ico" />
     <None Remove="Resources\Images\tieuvy1.jpg" />
     <None Remove="Resources\Images\tieuvy2.jpg" />
     <None Remove="Resources\Images\tomalaskanuongbbq.jpg" />
@@ -52,9 +84,31 @@
     <None Remove="Resources\Images\tomhumnuong2.jpg" />
     <None Remove="Resources\Images\tomhumnuongmoi.jpg" />
     <None Remove="Resources\Images\tommuni.jpg" />
+    <None Remove="Resources\Images\transaction.png" />
+    <None Remove="Resources\Images\TV_search.png" />
+    <None Remove="Resources\Images\users.png" />
+    <None Remove="Resources\Images\wills-signature-pen.jpg" />
+    <None Remove="Resources\Images\wrong_16_16.ico" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\Images\1-edit.png" />
+    <Resource Include="Resources\Images\1-new-items.png" />
+    <Resource Include="Resources\Images\143748-200.png" />
+    <Resource Include="Resources\Images\143748-2002.png" />
+    <Resource Include="Resources\Images\application.ico" />
+    <Resource Include="Resources\Images\application.png" />
+    <Resource Include="Resources\Images\bod.png" />
+    <Resource Include="Resources\Images\close.png" />
+    <Resource Include="Resources\Images\close1.jpg" />
+    <Resource Include="Resources\Images\CustomerPicture.png" />
+    <Resource Include="Resources\Images\email.png" />
+    <Resource Include="Resources\Images\eod.png" />
+    <Resource Include="Resources\Images\excel-icon.png" />
+    <Resource Include="Resources\Images\excel1.png" />
+    <Resource Include="Resources\Images\find.ico" />
+    <Resource Include="Resources\Images\find1.ico" />
+    <Resource Include="Resources\Images\FingerPrintTemplate.png" />
     <Resource Include="Resources\Images\gallery_photo_11.jpg" />
     <Resource Include="Resources\Images\gallery_photo_12.jpg" />
     <Resource Include="Resources\Images\gallery_photo_6.jpg" />
@@ -62,8 +116,14 @@
     <Resource Include="Resources\Images\gallery_photo_8.jpg" />
     <Resource Include="Resources\Images\ghe.jpg" />
     <Resource Include="Resources\Images\ghehap2.jpg" />
+    <Resource Include="Resources\Images\Globe21.png" />
+    <Resource Include="Resources\Images\Globe22.png" />
     <Resource Include="Resources\Images\haubolophomai.jpg" />
     <Resource Include="Resources\Images\hauphomai.jpg" />
+    <Resource Include="Resources\Images\help.png" />
+    <Resource Include="Resources\Images\history.ico" />
+    <Resource Include="Resources\Images\Home.png" />
+    <Resource Include="Resources\Images\Home1.png" />
     <Resource Include="Resources\Images\Huong-dan-cach-lam-tom-nuong-pho-mai.jpg" />
     <Resource Include="Resources\Images\laucachinh1.jpg" />
     <Resource Include="Resources\Images\lobster-platter-for-2-15821068008931789087195.jpg" />
@@ -80,12 +140,21 @@
     <Resource Include="Resources\Images\ocmongtay3.jpg" />
     <Resource Include="Resources\Images\ocmongtaynuong.jpg" />
     <Resource Include="Resources\Images\ocvoivoi.jpg" />
+    <Resource Include="Resources\Images\password.png" />
+    <Resource Include="Resources\Images\report.png" />
+    <Resource Include="Resources\Images\report2.png" />
+    <Resource Include="Resources\Images\search.png" />
+    <Resource Include="Resources\Images\security.png" />
     <Resource Include="Resources\Images\sena.jpg" />
     <Resource Include="Resources\Images\senb.jpg" />
     <Resource Include="Resources\Images\senc.jpg" />
     <Resource Include="Resources\Images\send.jpg" />
+    <Resource Include="Resources\Images\signature.png" />
     <Resource Include="Resources\Images\sochen.jpg" />
     <Resource Include="Resources\Images\sonuongmohanh.jpg" />
+    <Resource Include="Resources\Images\system.png" />
+    <Resource Include="Resources\Images\system1.png" />
+    <Resource Include="Resources\Images\tick_16_16.ico" />
     <Resource Include="Resources\Images\tieuvy1.jpg" />
     <Resource Include="Resources\Images\tieuvy2.jpg" />
     <Resource Include="Resources\Images\tomalaskanuongbbq.jpg" />
@@ -99,6 +168,11 @@
     <Resource Include="Resources\Images\tomhumnuong2.jpg" />
     <Resource Include="Resources\Images\tomhumnuongmoi.jpg" />
     <Resource Include="Resources\Images\tommuni.jpg" />
+    <Resource Include="Resources\Images\transaction.png" />
+    <Resource Include="Resources\Images\TV_search.png" />
+    <Resource Include="Resources\Images\users.png" />
+    <Resource Include="Resources\Images\wills-signature-pen.jpg" />
+    <Resource Include="Resources\Images\wrong_16_16.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -126,6 +200,10 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Controls\" />
   </ItemGroup>
 
 </Project>

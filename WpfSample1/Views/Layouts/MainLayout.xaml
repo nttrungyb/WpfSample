@@ -52,7 +52,7 @@
                 <Button x:Name="btnDataBinding" Content="DataBiding Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
                 <Button x:Name="btnStyle1" Content="Style1 Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
                 <Button x:Name="btnI18N" Content="I18N Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
-                
+                <Button x:Name="btnDataBinding2" Content="DataBiding2 Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
 
             </StackPanel>
 

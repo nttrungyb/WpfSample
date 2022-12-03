@@ -16,6 +16,7 @@ using WpfSample1.Component;
 using WpfSample1.Day2;
 using WpfSample1.Views.Layouts;
 using WpfSample1.Views.Login;
+using WpfSample1.Views.Menu;
 
 namespace WpfSample1
 {
@@ -27,16 +28,18 @@ namespace WpfSample1
 
         LoginPage loginPage;
         Page currentPage;
+        MenuPage menuPage;
 
         public MainWindow()
         {
             InitializeComponent();
-            //MainLayout mainLayout = new MainLayout(this);
+
             loginPage = new LoginPage(this);
             frmMainContent.Navigate(loginPage);
-            //RegisterPage registerPage = new RegisterPage(this);
-            //frmMainContent.Navigate(registerPage);
-            //frmMainContent.Navigate(mainLayout);
+            
+            menuPage = new MenuPage(this);
+            frmMenu.Navigate(menuPage);
+
             ApplicationContext.IsLogged = false;
             this.DataContext = this;
 
@@ -57,32 +60,16 @@ namespace WpfSample1
             return true;
         }
 
-        private void Login_Click(object sender, RoutedEventArgs e)
+        public void DoLoginLogout()
         {
-            if (ApplicationContext.IsLogged)
-            {
-                ApplicationContext.IsLogged = false;
-                btnLogin.Content = "Login";
-                DisplayLayout(loginPage);  
-            }
-            else
-            {
-                if (currentPage != loginPage)
-                {
-                    loginPage = new LoginPage(this);
-                    currentPage = loginPage;
-                    frmMainContent.Navigate(loginPage);
-                }
-            } 
-            
-            
+            ApplicationContext.IsLogged = !ApplicationContext.IsLogged;
+            menuPage.UpdateStatus();
         }
 
-        public void DoLogin()
-        {
-            ApplicationContext.IsLogged = true;
-            btnLogin.Content = "Logout";
-           
+        public void ShowLogin()
+        {    
+            DisplayLayout(loginPage);
         }
+      
     }
 }

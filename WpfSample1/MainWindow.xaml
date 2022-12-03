@@ -5,44 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfSample1"
         mc:Ignorable="d"
-        Title="WPF Panel Samples" Height="768" Width="1024" 
+        Title="Hệ thống giao dịch Intellect Offline" Height="768" Width="1024" 
         WindowState="Maximized">
 
 
     <DockPanel>
-        <DockPanel DockPanel.Dock="Top">
-            <Menu DockPanel.Dock="Left" >
-                <MenuItem Header="_File">
-                    <MenuItem Command="New" />
-                    <Separator />
-                    <MenuItem Header="_Exit" />
-                </MenuItem>
-                <MenuItem Header="_Edit">
-                    <MenuItem Command="Cut" />
-                    <MenuItem Command="Copy" />
-                    <MenuItem Command="Paste" />
-                </MenuItem>
-            </Menu>
-            <Button x:Name="btnLogin" DockPanel.Dock="Right" Margin="10, 5, 10, 5" Content="Login" Click="Login_Click">
-                <Button.Style>
-                    <Style>
-                        <Setter Property="Button.Background" Value="White"></Setter>
-                        <Setter Property="Button.Background" Value="White"></Setter>
-                    </Style>
-                </Button.Style>
-                <Button.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="0"/>
-                        <Setter Property="Padding" Value="10,2,10,3"/>
-                        <Setter Property="Background" Value="White"/>
-                        <Setter Property="BorderThickness" Value="0"></Setter>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <TextBlock></TextBlock>
-        </DockPanel>
+
+        <Frame x:Name="frmMenu" DockPanel.Dock="Top" NavigationUIVisibility="Hidden"/>
+
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBar.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="100" />
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </ItemsPanelTemplate>
+            </StatusBar.ItemsPanel>
+            <StatusBarItem>
+                <TextBlock Name="lblCursorPosition" />
+            </StatusBarItem>
+            <Separator Grid.Column="1" />
+            <StatusBarItem Grid.Column="2">
+                <TextBlock Text="c:\path\of\current\file.txt" />
+            </StatusBarItem>
+            <Separator Grid.Column="3" />
+            <StatusBarItem Grid.Column="4">
+                <ProgressBar Value="50" Width="90" Height="16" />
+            </StatusBarItem>
+        </StatusBar>
         
-        <TextBlock DockPanel.Dock="Bottom" TextAlignment="Center">Status Bar</TextBlock>
         <Frame x:Name="frmMainContent" NavigationUIVisibility="Hidden">
         </Frame>
     </DockPanel>

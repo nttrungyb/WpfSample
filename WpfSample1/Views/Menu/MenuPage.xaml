@@ -1,0 +1,63 @@
+﻿<Page x:Class="WpfSample1.Views.Menu.MenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfSample1.Views.Menu"
+      mc:Ignorable="d" 
+      d:DesignHeight="30" d:DesignWidth="1024"
+      Title="PgMenu">
+
+    <Menu Background="AliceBlue">
+        <Menu.ItemsPanel>
+            <ItemsPanelTemplate>
+                <DockPanel HorizontalAlignment="Stretch"/>
+            </ItemsPanelTemplate>
+        </Menu.ItemsPanel>
+        <MenuItem Header="_Đầu ngày">
+            <MenuItem.Icon>
+                <Image Source="/Resources/Images/bod.png"></Image>
+            </MenuItem.Icon>
+            <MenuItem Header="1. Mở phiên giao dịch tiền mặt đầu ngày" />
+            <MenuItem Header="2. Điều chuyển tiền mặt" />
+            <MenuItem Header="3. Nhập kho ấn chỉ thủ công" />
+        </MenuItem>
+        <MenuItem Header="_Cuối ngày">
+            <MenuItem.Icon>
+                <Image Source="/Resources/Images/eod.png"></Image>
+            </MenuItem.Icon>
+            <MenuItem Header="1. Đóng phiên giao dịch tiền mặt cuối ngày" />
+            <MenuItem Header="2. Mở lại phiên giao dịch" />
+            <MenuItem Header="3. Khai báo ấn chỉ hỏng" />
+        </MenuItem>
+
+        <MenuItem Header="Các _giao dịch">
+            <MenuItem.Icon>
+                <Image Source="/Resources/Images/transaction.png"></Image>
+            </MenuItem.Icon>
+            <MenuItem Header="1. Hàng chờ yêu cầu chỉnh sửa" />
+            <MenuItem Header="2. Hàng chờ phê duyệt" />
+            <Separator></Separator>
+            <MenuItem Header="3. Trạng thái phê duyệt" />
+            <MenuItem Header="4. Truy vấn các giao dịch" />
+
+            <Separator></Separator>
+            <MenuItem Header="5. Vấn tin khoản vay" />
+        </MenuItem>
+
+        <MenuItem Header="_Báo cáo">
+            <MenuItem.Icon>
+                <Image Source="/Resources/Images/report2.png"></Image>
+            </MenuItem.Icon>
+        </MenuItem>
+
+        <MenuItem Header="_Trợ giúp">
+            <MenuItem.Icon>
+                <Image Source="/Resources/Images/help.png"></Image>
+            </MenuItem.Icon>
+        </MenuItem>
+        <MenuItem Header="Đăng nhập" HorizontalAlignment="Right" FlowDirection="RightToLeft"
+                      Click="LoginLogout_Click" x:Name="mnLogin">
+        </MenuItem>
+    </Menu>
+</Page>
