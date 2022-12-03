@@ -246,6 +246,13 @@ namespace WpfSample1.Views.Layouts
                 form.ShowDialog();
             }
 
+            if (sender == btnGraphics2Demo)
+            {
+                Graphics2Demo form = new Graphics2Demo();
+                form.Owner = mainWindow;
+                form.ShowDialog();
+            }
+
         }
     }
 }

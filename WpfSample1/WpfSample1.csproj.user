@@ -67,6 +67,9 @@
     <Compile Update="Day4\CustomControlDemo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Day4\Graphics2Demo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Day4\GraphicsDemo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -151,6 +154,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Day4\CustomControlDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Day4\Graphics2Demo.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Day4\GraphicsDemo.xaml">

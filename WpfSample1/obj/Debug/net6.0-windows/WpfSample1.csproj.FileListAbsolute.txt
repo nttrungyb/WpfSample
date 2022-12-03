@@ -134,3 +134,5 @@ D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day4\CustomControl
 D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Views\UserControls\SeaFoodControl.baml
 D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day4\GraphicsDemo.g.cs
 D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day4\GraphicsDemo.baml
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day4\Graphics2Demo.g.cs
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day4\Graphics2Demo.baml
