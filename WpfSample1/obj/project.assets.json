@@ -1,11 +1,33 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {}
+    "net6.0-windows7.0": {
+      "DemoControlLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DemoControlLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DemoControlLibrary.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DemoControlLibrary/1.0.0": {
+      "type": "project",
+      "path": "../DemoControlLibrary/DemoControlLibrary.csproj",
+      "msbuildProject": "../DemoControlLibrary/DemoControlLibrary.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": []
+    "net6.0-windows7.0": [
+      "DemoControlLibrary >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\HP\\.nuget\\packages\\": {}
@@ -33,7 +55,11 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\CODE\\WPF\\Git\\WpfSample\\DemoControlLibrary\\DemoControlLibrary.csproj": {
+              "projectPath": "D:\\CODE\\WPF\\Git\\WpfSample\\DemoControlLibrary\\DemoControlLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

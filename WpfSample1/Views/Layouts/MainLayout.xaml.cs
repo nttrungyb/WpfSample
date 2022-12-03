@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using WpfSample1.Component;
 using WpfSample1.Day2;
 using WpfSample1.Day3;
+using WpfSample1.Day4;
 
 namespace WpfSample1.Views.Layouts
 {
@@ -206,6 +207,27 @@ namespace WpfSample1.Views.Layouts
             if (sender == btnDataBinding2)
             {
                 DataTemplate2Demo form = new DataTemplate2Demo();
+                form.Owner = mainWindow;
+                form.ShowDialog();
+            }
+
+            if (sender == btnUserControl)
+            {
+                UserControlDemo form = new UserControlDemo();
+                form.Owner = mainWindow;
+                form.ShowDialog();
+            }
+
+            if (sender == btnTrigger)
+            {
+                TriggerDemo form = new TriggerDemo();
+                form.Owner = mainWindow;
+                form.ShowDialog();
+            }
+
+            if (sender == btnControlLib)
+            {
+                ControlLibraryDemo form = new ControlLibraryDemo();
                 form.Owner = mainWindow;
                 form.ShowDialog();
             }

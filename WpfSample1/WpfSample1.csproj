@@ -92,6 +92,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DemoControlLibrary\DemoControlLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Resources\Images\1-edit.png" />
     <Resource Include="Resources\Images\1-new-items.png" />
     <Resource Include="Resources\Images\143748-200.png" />
@@ -200,10 +204,6 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Views\Controls\" />
   </ItemGroup>
 
 </Project>

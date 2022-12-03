@@ -1,0 +1,17 @@
+D:\CODE\WPF\Git\WpfSample\DemoControlLibrary\bin\Debug\net6.0-windows\DemoControlLibrary.deps.json
+D:\CODE\WPF\Git\WpfSample\DemoControlLibrary\bin\Debug\net6.0-windows\DemoControlLibrary.dll
+D:\CODE\WPF\Git\WpfSample\DemoControlLibrary\bin\Debug\net6.0-windows\DemoControlLibrary.pdb
+D:\CODE\WPF\Git\WpfSample\DemoControlLibrary\obj\Debug\net6.0-windows\DemoControlLibrary.csproj.AssemblyReference.cache
+D:\CODE\WPF\Git\WpfSample\DemoControlLibrary\obj\Debug\net6.0-windows\UserControls\UCFood.g.cs
+D:\CODE\WPF\Git\WpfSample\DemoControlLibrary\obj\Debug\net6.0-windows\DemoControlLibrary_MarkupCompile.cache
+D:\CODE\WPF\Git\WpfSample\DemoControlLibrary\obj\Debug\net6.0-windows\DemoControlLibrary_MarkupCompile.lref
+D:\CODE\WPF\Git\WpfSample\DemoControlLibrary\obj\Debug\net6.0-windows\UserControls\UCFood.baml
+D:\CODE\WPF\Git\WpfSample\DemoControlLibrary\obj\Debug\net6.0-windows\DemoControlLibrary.g.resources
+D:\CODE\WPF\Git\WpfSample\DemoControlLibrary\obj\Debug\net6.0-windows\DemoControlLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\CODE\WPF\Git\WpfSample\DemoControlLibrary\obj\Debug\net6.0-windows\DemoControlLibrary.AssemblyInfoInputs.cache
+D:\CODE\WPF\Git\WpfSample\DemoControlLibrary\obj\Debug\net6.0-windows\DemoControlLibrary.AssemblyInfo.cs
+D:\CODE\WPF\Git\WpfSample\DemoControlLibrary\obj\Debug\net6.0-windows\DemoControlLibrary.csproj.CoreCompileInputs.cache
+D:\CODE\WPF\Git\WpfSample\DemoControlLibrary\obj\Debug\net6.0-windows\DemoControlLibrary.dll
+D:\CODE\WPF\Git\WpfSample\DemoControlLibrary\obj\Debug\net6.0-windows\refint\DemoControlLibrary.dll
+D:\CODE\WPF\Git\WpfSample\DemoControlLibrary\obj\Debug\net6.0-windows\DemoControlLibrary.pdb
+D:\CODE\WPF\Git\WpfSample\DemoControlLibrary\obj\Debug\net6.0-windows\ref\DemoControlLibrary.dll

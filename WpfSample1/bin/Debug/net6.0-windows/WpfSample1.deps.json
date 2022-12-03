@@ -7,6 +7,9 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "WpfSample1/1.0.0": {
+        "dependencies": {
+          "DemoControlLibrary": "1.0.0"
+        },
         "runtime": {
           "WpfSample1.dll": {}
         },
@@ -18,11 +21,21 @@
             "locale": "th-TH"
           }
         }
+      },
+      "DemoControlLibrary/1.0.0": {
+        "runtime": {
+          "DemoControlLibrary.dll": {}
+        }
       }
     }
   },
   "libraries": {
     "WpfSample1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DemoControlLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfSample1.Day3.UserControlDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSample1.Day3"
+        xmlns:uc="clr-namespace:WpfSample1.Views.Controls"
+        mc:Ignorable="d"
+        Title="UserControlDemo" Height="450" Width="800"
+        WindowStartupLocation="CenterOwner"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Hải sản - Sea Food" FontSize="22" FontWeight="Bold" Grid.Row="0"></TextBlock>
+        <uc:SeaFoodControl Grid.Row="1" FullName="Nhập FullName:" MaxLength="30" Height="50"></uc:SeaFoodControl>
+        <uc:SeaFoodControl Grid.Row="2" Address="Nhập địa chỉ:" MaxLength="140" Height="50"></uc:SeaFoodControl>
+    </Grid>
+</Window>

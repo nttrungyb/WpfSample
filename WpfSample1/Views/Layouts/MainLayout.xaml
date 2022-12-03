@@ -56,6 +56,15 @@
 
             </StackPanel>
 
+
+            <StackPanel Margin="3" Name="stackPanel4" Orientation="Vertical">
+                <Label Margin="3" HorizontalAlignment="Center" FontWeight="Bold" >Day 4 - User Control Samples</Label>
+                <Button x:Name="btnUserControl" Content="UserControl Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
+                <Button x:Name="btnTrigger" Content="Trigger Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
+                <Button x:Name="btnControlLib" Content="Control Lib Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
+                
+            </StackPanel>
+
         </StackPanel>
 
     </DockPanel>
