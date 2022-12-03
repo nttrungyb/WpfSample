@@ -62,6 +62,8 @@
                 <Button x:Name="btnUserControl" Content="UserControl Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
                 <Button x:Name="btnTrigger" Content="Trigger Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
                 <Button x:Name="btnControlLib" Content="Control Lib Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
+                <Button x:Name="btnCustomControl" Content="Custom Control Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
+                <Button x:Name="btnGraphicsDemo" Content="Graphics Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
                 
             </StackPanel>
 

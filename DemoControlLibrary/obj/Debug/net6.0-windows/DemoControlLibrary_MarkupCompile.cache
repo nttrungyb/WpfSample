@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 
-1-570915143
+2-366609374
 
-2-1288833237
+3-1430365643
 1942007414746
-UserControls\UCFood.xaml;
+Themes\Generic.xaml;UserControls\UCFood.xaml;
 
 False
 

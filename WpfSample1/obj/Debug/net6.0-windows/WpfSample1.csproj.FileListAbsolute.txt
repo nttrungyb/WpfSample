@@ -119,8 +119,6 @@ D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day3\DataTemplate2
 D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day3\DataTemplate2Demo.baml
 D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Views\Menu\MenuPage.g.cs
 D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Views\Menu\MenuPage.baml
-D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Views\Controls\SeaFoodControl.g.cs
-D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Views\Controls\SeaFoodControl.baml
 D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day4\UserControlDemo.g.cs
 D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day4\UserControlDemo.baml
 D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day4\TriggerDemo.g.cs
@@ -130,3 +128,9 @@ D:\CODE\WPF\Git\WpfSample\WpfSample1\bin\Debug\net6.0-windows\DemoControlLibrary
 D:\CODE\WPF\Git\WpfSample\WpfSample1\bin\Debug\net6.0-windows\DemoControlLibrary.pdb
 D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day4\ControlLibraryDemo.baml
 D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\WpfSample1.csproj.CopyComplete
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day4\CustomControlDemo.g.cs
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Views\UserControls\SeaFoodControl.g.cs
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day4\CustomControlDemo.baml
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Views\UserControls\SeaFoodControl.baml
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day4\GraphicsDemo.g.cs
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day4\GraphicsDemo.baml

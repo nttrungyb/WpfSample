@@ -64,13 +64,19 @@
     <Compile Update="Day4\ControlLibraryDemo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Day4\CustomControlDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Day4\GraphicsDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Day4\TriggerDemo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Day4\UserControlDemo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Controls\SeaFoodControl.xaml.cs">
+    <Compile Update="Views\UserControls\SeaFoodControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\Layouts\MainLayout.xaml.cs">
@@ -144,6 +150,12 @@
     <Page Update="Day4\ControlLibraryDemo.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Day4\CustomControlDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Day4\GraphicsDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Day4\TriggerDemo.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -153,7 +165,7 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Controls\SeaFoodControl.xaml">
+    <Page Update="Views\UserControls\SeaFoodControl.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Layouts\MainLayout.xaml">

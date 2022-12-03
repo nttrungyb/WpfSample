@@ -8,6 +8,9 @@
       d:DesignHeight="768" d:DesignWidth="1024"
       Title="LoginPage">
 
+    <Page.Resources>
+        
+    </Page.Resources>
     <Grid Width="500" Height="227" Background="GhostWhite" Margin="0 0 0 200">
         <Border BorderBrush="Gainsboro" BorderThickness="1" CornerRadius="3,3,3,3">
             <Grid>
@@ -53,14 +56,14 @@ HorizontalAlignment="Left" Margin="10 0 0 0" VerticalContentAlignment="Center" /
                 </Label>
                 <StackPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left">
                     <TextBox Name="txtIpAddress" Width="150" Height="25" VerticalContentAlignment="Center"/>
-                    <TextBlock Text="Kiểm tra kết nối" Margin="0 5 0 0"></TextBlock>
+                    <Button Style="{StaticResource LinkButton}" Content="Kiểm tra kết nối" Margin="0 5 0 0"></Button>
                 </StackPanel>
                 <StackPanel Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left">
                     <StackPanel Orientation="Horizontal" Margin="10 0 0 0">
                         <TextBlock>Ngày giao dịch:</TextBlock>
                         <DatePicker></DatePicker>
                     </StackPanel>
-                    <TextBlock  Text="Ngày giao dịch" Margin="10 5 5 0" HorizontalAlignment="Right"></TextBlock>
+                    <Button Style="{StaticResource LinkButton}"  Content="Ngày giao dịch" Margin="10 5 5 0" HorizontalAlignment="Right"></Button>
                 </StackPanel>
                 <TextBlock Height="25" x:Name="errorMessage" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"></TextBlock>
                 <StackPanel Margin="10 0 0 0" Grid.Row="3" Grid.Column="3" Orientation="Horizontal" >

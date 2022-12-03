@@ -7,5 +7,23 @@
         <BitmapImage x:Key="tieuvy1" UriSource="/Resources/Images/tieuvy1.jpg"></BitmapImage>
         <BitmapImage x:Key="tieuvy2" UriSource="/Resources/Images/tieuvy2.jpg"></BitmapImage>
         <BitmapImage x:Key="ghe" UriSource="/Resources/Images/ghehap2.jpg"></BitmapImage>
+        <Style x:Key="LinkButton" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <TextBlock TextDecorations="Underline">
+                    <ContentPresenter />
+                        </TextBlock>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Foreground" Value="Blue" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Foreground" Value="Red" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
     </Application.Resources>
 </Application>

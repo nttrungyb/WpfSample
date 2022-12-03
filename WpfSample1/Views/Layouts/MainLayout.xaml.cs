@@ -232,6 +232,20 @@ namespace WpfSample1.Views.Layouts
                 form.ShowDialog();
             }
 
+            if (sender == btnCustomControl)
+            {
+                CustomControlDemo form = new CustomControlDemo();
+                form.Owner = mainWindow;
+                form.ShowDialog();
+            }
+
+            if (sender == btnGraphicsDemo)
+            {
+                GraphicsDemo form = new GraphicsDemo();
+                form.Owner = mainWindow;
+                form.ShowDialog();
+            }
+
         }
     }
 }
