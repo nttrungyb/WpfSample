@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Data\Files\Test.txt" />
     <None Remove="Resources\Images\1-edit.png" />
     <None Remove="Resources\Images\1-new-items.png" />
     <None Remove="Resources\Images\143748-200.png" />
@@ -89,6 +90,7 @@
     <None Remove="Resources\Images\users.png" />
     <None Remove="Resources\Images\wills-signature-pen.jpg" />
     <None Remove="Resources\Images\wrong_16_16.ico" />
+    <None Remove="Resources\Music\tongphu.mp4" />
   </ItemGroup>
 
   <ItemGroup>
@@ -96,87 +98,255 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Resources\Images\1-edit.png" />
-    <Resource Include="Resources\Images\1-new-items.png" />
-    <Resource Include="Resources\Images\143748-200.png" />
-    <Resource Include="Resources\Images\143748-2002.png" />
-    <Resource Include="Resources\Images\application.ico" />
-    <Resource Include="Resources\Images\application.png" />
-    <Resource Include="Resources\Images\bod.png" />
-    <Resource Include="Resources\Images\close.png" />
-    <Resource Include="Resources\Images\close1.jpg" />
-    <Resource Include="Resources\Images\CustomerPicture.png" />
-    <Resource Include="Resources\Images\email.png" />
-    <Resource Include="Resources\Images\eod.png" />
-    <Resource Include="Resources\Images\excel-icon.png" />
-    <Resource Include="Resources\Images\excel1.png" />
-    <Resource Include="Resources\Images\find.ico" />
-    <Resource Include="Resources\Images\find1.ico" />
-    <Resource Include="Resources\Images\FingerPrintTemplate.png" />
-    <Resource Include="Resources\Images\gallery_photo_11.jpg" />
-    <Resource Include="Resources\Images\gallery_photo_12.jpg" />
-    <Resource Include="Resources\Images\gallery_photo_6.jpg" />
-    <Resource Include="Resources\Images\gallery_photo_7.jpg" />
-    <Resource Include="Resources\Images\gallery_photo_8.jpg" />
-    <Resource Include="Resources\Images\ghe.jpg" />
-    <Resource Include="Resources\Images\ghehap2.jpg" />
-    <Resource Include="Resources\Images\Globe21.png" />
-    <Resource Include="Resources\Images\Globe22.png" />
-    <Resource Include="Resources\Images\haubolophomai.jpg" />
-    <Resource Include="Resources\Images\hauphomai.jpg" />
-    <Resource Include="Resources\Images\help.png" />
-    <Resource Include="Resources\Images\history.ico" />
-    <Resource Include="Resources\Images\Home.png" />
-    <Resource Include="Resources\Images\Home1.png" />
-    <Resource Include="Resources\Images\Huong-dan-cach-lam-tom-nuong-pho-mai.jpg" />
-    <Resource Include="Resources\Images\laucachinh1.jpg" />
-    <Resource Include="Resources\Images\lobster-platter-for-2-15821068008931789087195.jpg" />
-    <Resource Include="Resources\Images\maingoc.jpg" />
-    <Resource Include="Resources\Images\maingoc1.jpg" />
-    <Resource Include="Resources\Images\methaisanchat1.jpg" />
-    <Resource Include="Resources\Images\mucchien.jpg" />
-    <Resource Include="Resources\Images\mucmotnangnuong.jpg" />
-    <Resource Include="Resources\Images\muctrung.jpg" />
-    <Resource Include="Resources\Images\nhumbien.jpg" />
-    <Resource Include="Resources\Images\ochuongnuong.jpg" />
-    <Resource Include="Resources\Images\ochuongnuong2.jpg" />
-    <Resource Include="Resources\Images\ocmongtay.jpg" />
-    <Resource Include="Resources\Images\ocmongtay3.jpg" />
-    <Resource Include="Resources\Images\ocmongtaynuong.jpg" />
-    <Resource Include="Resources\Images\ocvoivoi.jpg" />
-    <Resource Include="Resources\Images\password.png" />
-    <Resource Include="Resources\Images\report.png" />
-    <Resource Include="Resources\Images\report2.png" />
-    <Resource Include="Resources\Images\search.png" />
-    <Resource Include="Resources\Images\security.png" />
-    <Resource Include="Resources\Images\sena.jpg" />
-    <Resource Include="Resources\Images\senb.jpg" />
-    <Resource Include="Resources\Images\senc.jpg" />
-    <Resource Include="Resources\Images\send.jpg" />
-    <Resource Include="Resources\Images\signature.png" />
-    <Resource Include="Resources\Images\sochen.jpg" />
-    <Resource Include="Resources\Images\sonuongmohanh.jpg" />
-    <Resource Include="Resources\Images\system.png" />
-    <Resource Include="Resources\Images\system1.png" />
-    <Resource Include="Resources\Images\tick_16_16.ico" />
-    <Resource Include="Resources\Images\tieuvy1.jpg" />
-    <Resource Include="Resources\Images\tieuvy2.jpg" />
-    <Resource Include="Resources\Images\tomalaskanuongbbq.jpg" />
-    <Resource Include="Resources\Images\tomhum.jpg" />
-    <Resource Include="Resources\Images\tomhum2.png" />
-    <Resource Include="Resources\Images\tomhumbolophomai.jpg" />
-    <Resource Include="Resources\Images\tomhumbolophomai1.png" />
-    <Resource Include="Resources\Images\tomhumbolophomai3.jpg" />
-    <Resource Include="Resources\Images\tomhumdinhcao.jpg" />
-    <Resource Include="Resources\Images\tomhumnuong.jpg" />
-    <Resource Include="Resources\Images\tomhumnuong2.jpg" />
-    <Resource Include="Resources\Images\tomhumnuongmoi.jpg" />
-    <Resource Include="Resources\Images\tommuni.jpg" />
-    <Resource Include="Resources\Images\transaction.png" />
-    <Resource Include="Resources\Images\TV_search.png" />
-    <Resource Include="Resources\Images\users.png" />
-    <Resource Include="Resources\Images\wills-signature-pen.jpg" />
-    <Resource Include="Resources\Images\wrong_16_16.ico" />
+    <Resource Include="Resources\Images\1-edit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\1-new-items.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\143748-200.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\143748-2002.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\application.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\application.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\bod.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\close.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\close1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\CustomerPicture.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\email.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\eod.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\excel-icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\excel1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\find.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\find1.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\FingerPrintTemplate.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\gallery_photo_11.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\gallery_photo_12.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\gallery_photo_6.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\gallery_photo_7.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\gallery_photo_8.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\ghe.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\ghehap2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Globe21.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Globe22.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\haubolophomai.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\hauphomai.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\help.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\history.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Home.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Home1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Huong-dan-cach-lam-tom-nuong-pho-mai.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\laucachinh1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\lobster-platter-for-2-15821068008931789087195.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\maingoc.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\maingoc1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\methaisanchat1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\mucchien.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\mucmotnangnuong.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\muctrung.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\nhumbien.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\ochuongnuong.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\ochuongnuong2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\ocmongtay.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\ocmongtay3.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\ocmongtaynuong.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\ocvoivoi.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\password.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\report.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\report2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\search.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\security.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\sena.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\senb.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\senc.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\send.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\signature.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\sochen.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\sonuongmohanh.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\system.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\system1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\tick_16_16.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\tieuvy1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\tieuvy2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\tomalaskanuongbbq.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\tomhum.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\tomhum2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\tomhumbolophomai.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\tomhumbolophomai1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\tomhumbolophomai3.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\tomhumdinhcao.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\tomhumnuong.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\tomhumnuong2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\tomhumnuongmoi.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\tommuni.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\transaction.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\TV_search.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\users.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\wills-signature-pen.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\wrong_16_16.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Data\Files\Test.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Music\tongphu.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

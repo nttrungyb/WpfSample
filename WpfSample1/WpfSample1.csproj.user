@@ -79,6 +79,15 @@
     <Compile Update="Day4\UserControlDemo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Day5\DragAndDropDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Day5\MutilMediaDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Day5\ReadWriteFileDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\UserControls\SeaFoodControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -166,6 +175,15 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Day4\UserControlDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Day5\DragAndDropDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Day5\MutilMediaDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Day5\ReadWriteFileDemo.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

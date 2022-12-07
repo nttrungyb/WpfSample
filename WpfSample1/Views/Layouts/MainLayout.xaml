@@ -68,6 +68,15 @@
                 
             </StackPanel>
 
+
+            <StackPanel Margin="3" Name="stackPanel5" Orientation="Vertical">
+                <Label Margin="3" HorizontalAlignment="Center" FontWeight="Bold" >Day 5 - Interaction Samples</Label>
+                <Button x:Name="btnDragDrop" Content="Drag and drop Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
+                <Button x:Name="btnMediaDemo" Content="Media Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
+                <Button x:Name="btnFileDemo" Content="Read write File" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
+               
+            </StackPanel>
+
         </StackPanel>
 
     </DockPanel>

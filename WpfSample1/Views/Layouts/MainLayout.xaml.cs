@@ -16,6 +16,7 @@ using WpfSample1.Component;
 using WpfSample1.Day2;
 using WpfSample1.Day3;
 using WpfSample1.Day4;
+using WpfSample1.Day5;
 
 namespace WpfSample1.Views.Layouts
 {
@@ -249,6 +250,27 @@ namespace WpfSample1.Views.Layouts
             if (sender == btnGraphics2Demo)
             {
                 Graphics2Demo form = new Graphics2Demo();
+                form.Owner = mainWindow;
+                form.ShowDialog();
+            }
+
+            if (sender == btnDragDrop)
+            {
+                DragAndDropDemo form = new DragAndDropDemo();
+                form.Owner = mainWindow;
+                form.ShowDialog();
+            }
+
+            if (sender == btnMediaDemo)
+            {
+                MultiMediaDemo form = new MultiMediaDemo();
+                form.Owner = mainWindow;
+                form.ShowDialog();
+            }
+
+            if (sender == btnFileDemo)
+            {
+                ReadWriteFileDemo form = new ReadWriteFileDemo();
                 form.Owner = mainWindow;
                 form.ShowDialog();
             }
