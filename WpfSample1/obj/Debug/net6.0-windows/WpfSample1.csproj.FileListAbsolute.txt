@@ -100,3 +100,7 @@ D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\ref\WpfSample1.dll
 D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day5\ReadWriteFileDemo.g.cs
 D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day5\ReadWriteFileDemo.baml
 D:\CODE\WPF\Git\WpfSample\WpfSample1\bin\Debug\net6.0-windows\Data\Files\Test.txt
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day5\DependencyPropertyDemo.g.cs
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day5\DependencyPropertyDemo.baml
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day5\WindowPlayer.g.cs
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day5\WindowPlayer.baml

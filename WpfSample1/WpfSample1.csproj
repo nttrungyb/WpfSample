@@ -42,6 +42,10 @@
     <None Remove="Resources\Images\Home.png" />
     <None Remove="Resources\Images\Home1.png" />
     <None Remove="Resources\Images\Huong-dan-cach-lam-tom-nuong-pho-mai.jpg" />
+    <None Remove="Resources\Images\i1.jpeg" />
+    <None Remove="Resources\Images\i2.png" />
+    <None Remove="Resources\Images\i3.png" />
+    <None Remove="Resources\Images\i4.png" />
     <None Remove="Resources\Images\laucachinh1.jpg" />
     <None Remove="Resources\Images\lobster-platter-for-2-15821068008931789087195.jpg" />
     <None Remove="Resources\Images\maingoc.jpg" />
@@ -58,6 +62,8 @@
     <None Remove="Resources\Images\ocmongtaynuong.jpg" />
     <None Remove="Resources\Images\ocvoivoi.jpg" />
     <None Remove="Resources\Images\password.png" />
+    <None Remove="Resources\Images\pause.png" />
+    <None Remove="Resources\Images\play.png" />
     <None Remove="Resources\Images\report.png" />
     <None Remove="Resources\Images\report2.png" />
     <None Remove="Resources\Images\search.png" />
@@ -69,6 +75,8 @@
     <None Remove="Resources\Images\signature.png" />
     <None Remove="Resources\Images\sochen.jpg" />
     <None Remove="Resources\Images\sonuongmohanh.jpg" />
+    <None Remove="Resources\Images\sound.png" />
+    <None Remove="Resources\Images\stop.png" />
     <None Remove="Resources\Images\system.png" />
     <None Remove="Resources\Images\system1.png" />
     <None Remove="Resources\Images\tick_16_16.ico" />
@@ -197,6 +205,18 @@
     <Resource Include="Resources\Images\Huong-dan-cach-lam-tom-nuong-pho-mai.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\Images\i1.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\i2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\i3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\i4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Images\laucachinh1.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -245,6 +265,12 @@
     <Resource Include="Resources\Images\password.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\Images\pause.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\play.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Images\report.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -276,6 +302,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\sonuongmohanh.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\sound.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\stop.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\system.png">

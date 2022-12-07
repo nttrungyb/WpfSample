@@ -74,6 +74,8 @@
                 <Button x:Name="btnDragDrop" Content="Drag and drop Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
                 <Button x:Name="btnMediaDemo" Content="Media Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
                 <Button x:Name="btnFileDemo" Content="Read write File" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
+                <Button x:Name="btnDependencyProperties" Content="Dependency Properties" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
+                <Button x:Name="btnPlayer" Content="Media Player" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
                
             </StackPanel>
 

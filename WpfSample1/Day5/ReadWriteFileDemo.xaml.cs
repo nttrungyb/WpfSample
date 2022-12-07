@@ -32,7 +32,7 @@ namespace WpfSample1.Day5
             if (File.Exists(fileName))
             {
                 StreamReader sr = new StreamReader(fileName);   
-                txtName.Text = sr.ReadToEnd();
+                txtContent.Text = sr.ReadToEnd();
                 sr.Close();
             }
             else
@@ -48,7 +48,7 @@ namespace WpfSample1.Day5
             try
             {
                 FileStream fs;
-                if (File.Exists(filePath))
+                if (!File.Exists(filePath))
                 {
                     fs = File.Create(filePath);
                 }
@@ -59,11 +59,11 @@ namespace WpfSample1.Day5
 
                 StreamWriter objWrite = new StreamWriter(fs);
                 objWrite.WriteLine(txtName.Text);
-                objWrite.Write(txtAddress.Text);
+                objWrite.WriteLine(txtAddress.Text);
                 objWrite.Close();
                 
-                txtName.Clear();
-                txtAddress.Clear();
+                //txtName.Clear();
+                //txtAddress.Clear();
 
                 MessageBox.Show($"Ghi file {filePath} thanh cong!");
             }

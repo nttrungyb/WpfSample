@@ -275,6 +275,20 @@ namespace WpfSample1.Views.Layouts
                 form.ShowDialog();
             }
 
+            if (sender == btnDependencyProperties)
+            {
+                DependencyPropertyDemo form = new DependencyPropertyDemo();
+                form.Owner = mainWindow;
+                form.ShowDialog();
+            }
+
+            if (sender == btnPlayer)
+            {
+                WindowPlayer form = new WindowPlayer();
+                form.Owner = mainWindow;
+                form.ShowDialog();
+            }
+
         }
     }
 }

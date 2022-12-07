@@ -5,20 +5,49 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfSample1.Day5"
         mc:Ignorable="d"
-        Title="ReadWriteFileDemo" Height="450" Width="800"
-        WindowStartupLocation="CenterOwner">
+        Title="ReadWriteFileDemo" Height="500" Width="800"
+        WindowStartupLocation="CenterOwner"
+        >
+
+    <Window.Resources>
+        <Color x:Key="detailMark">#FFA1A9B3</Color>
+        <SolidColorBrush x:Key="detailMarkBrush" Color="{StaticResource ResourceKey=detailMark}" />
+        <Style x:Key="flatTextBox" TargetType="{x:Type TextBox}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Grid>
+                            <Rectangle  Stroke="{StaticResource ResourceKey=detailMarkBrush}" StrokeThickness="1"/>
+                            <TextBox Margin="1" Text="{TemplateBinding Text}" BorderThickness="0"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    
     <StackPanel Orientation="Vertical">
         <TextBlock x:Name="lblName" Text="Ho va ten:" Margin="5"/>
         <TextBox Height="25"  Margin="5"
-                  x:Name="txtName" VerticalAlignment="Top" />
+                  x:Name="txtName" Text="Nguyễn Thành Trung" VerticalAlignment="Top" />
         <TextBlock x:Name="lblAddress" Text="Dia chi:" Margin="5"/>
         <TextBox Height="25"  Margin="5"
-                  x:Name="txtAddress" VerticalAlignment="Top"/>
+                  x:Name="txtAddress" Text="169 Linh đường, Hoàng Liệt, Hoàng Mai, hà nội" VerticalAlignment="Top"/>
+
+        
+        <Button Content="Ghi file" Height="25" HorizontalAlignment="Center"
+                Margin="5" x:Name="btnWriteFile" Width="75" Click="btnWriteFile_Click"/>
 
         <Button Content="Doc file" Height="25" HorizontalAlignment="Center"
                 Margin="5" x:Name="btnReadFile" Width="75" Click="btnReadFile_Click"/>
 
-        <Button Content="Ghi file" Height="25" HorizontalAlignment="Center"
-                Margin="5" x:Name="btnWriteFile" Width="75" Click="btnWriteFile_Click"/>
+
+        <TextBox Height="200" AcceptsReturn="True" TextWrapping="Wrap" 
+                 VerticalScrollBarVisibility="Auto"
+                 x:Name="txtContent" Margin="10 20 10 10"
+                 Style="{StaticResource flatTextBox}"
+                 />
+
+
     </StackPanel>
 </Window>
