@@ -18,8 +18,7 @@
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button Width="80" Height="25" Margin="5">Thêm mới</Button>
-            <Button Width="80" Height="25" Margin="5">Cập nhật</Button>
+            <Button x:Name="BtnUpdate" Width="80" Height="25" Margin="5" Click="BtnUpdate_Click">Cập nhật</Button>
             <Button Width="80" Height="25" Margin="5">Xóa</Button>
         </StackPanel>
     </StackPanel>

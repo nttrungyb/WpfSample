@@ -27,8 +27,38 @@ namespace WpfSample1.Day6
         {
             InitializeComponent();
             _service = service;
+            SetGridData();
+        }
+
+
+        void SetGridData()
+        {
             List<SeaFood> data = _service.GetSeaFoods();
             gridSeaFood.ItemsSource = data;
+        }
+
+        private void BtnUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            if (gridSeaFood.SelectedItem != null)
+            {
+                SeaFood seaFood = (SeaFood)gridSeaFood.SelectedItem;
+                //MessageBox.Show($"{seaFood.Ma} - {seaFood.Ten} -  {seaFood.Gia} - {seaFood.XuatXu}");
+                var _result = _service.UpdateSeaFood(seaFood);    
+                if (_result > 0)
+                {
+                    MessageBox.Show("Cập nhật dữ liệu thành công!" , "Thông báo");
+                    SetGridData();
+                }
+                else
+                {
+                    MessageBox.Show("Cập nhật dữ liệu thất bại!", "Thông báo");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Bạn chưa nhập giá trị!", "Thông báo");
+            }
+            
         }
     }
 }

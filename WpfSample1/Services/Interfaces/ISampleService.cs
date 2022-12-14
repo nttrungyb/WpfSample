@@ -10,5 +10,7 @@ namespace WpfSample1.Services.Interfaces
     public interface ISampleService
     {
         public List<SeaFood> GetSeaFoods();
+
+        public int UpdateSeaFood(SeaFood seaFood);
     }
 }
