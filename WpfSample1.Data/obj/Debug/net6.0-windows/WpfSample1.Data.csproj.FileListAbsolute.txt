@@ -1,0 +1,12 @@
+D:\CODE\WPF\Git\WpfSample\WpfSample1.Data\bin\Debug\net6.0-windows\WpfSample1.Data.deps.json
+D:\CODE\WPF\Git\WpfSample\WpfSample1.Data\bin\Debug\net6.0-windows\WpfSample1.Data.dll
+D:\CODE\WPF\Git\WpfSample\WpfSample1.Data\bin\Debug\net6.0-windows\WpfSample1.Data.pdb
+D:\CODE\WPF\Git\WpfSample\WpfSample1.Data\obj\Debug\net6.0-windows\WpfSample1.Data.csproj.AssemblyReference.cache
+D:\CODE\WPF\Git\WpfSample\WpfSample1.Data\obj\Debug\net6.0-windows\WpfSample1.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\CODE\WPF\Git\WpfSample\WpfSample1.Data\obj\Debug\net6.0-windows\WpfSample1.Data.AssemblyInfoInputs.cache
+D:\CODE\WPF\Git\WpfSample\WpfSample1.Data\obj\Debug\net6.0-windows\WpfSample1.Data.AssemblyInfo.cs
+D:\CODE\WPF\Git\WpfSample\WpfSample1.Data\obj\Debug\net6.0-windows\WpfSample1.Data.csproj.CoreCompileInputs.cache
+D:\CODE\WPF\Git\WpfSample\WpfSample1.Data\obj\Debug\net6.0-windows\WpfSample1.Data.dll
+D:\CODE\WPF\Git\WpfSample\WpfSample1.Data\obj\Debug\net6.0-windows\refint\WpfSample1.Data.dll
+D:\CODE\WPF\Git\WpfSample\WpfSample1.Data\obj\Debug\net6.0-windows\WpfSample1.Data.pdb
+D:\CODE\WPF\Git\WpfSample\WpfSample1.Data\obj\Debug\net6.0-windows\ref\WpfSample1.Data.dll

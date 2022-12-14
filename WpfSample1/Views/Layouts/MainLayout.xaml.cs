@@ -17,6 +17,8 @@ using WpfSample1.Day2;
 using WpfSample1.Day3;
 using WpfSample1.Day4;
 using WpfSample1.Day5;
+using WpfSample1.Day6;
+using WpfSample1.Services.Interfaces;
 
 namespace WpfSample1.Views.Layouts
 {
@@ -28,9 +30,12 @@ namespace WpfSample1.Views.Layouts
 
         MainWindow mainWindow;
 
-        public MainLayout(MainWindow mainWindow)
+        private readonly ISampleService _service;
+
+        public MainLayout(MainWindow mainWindow, ISampleService service)
         {
             InitializeComponent();
+            this._service = service;
             this.mainWindow = mainWindow;   
         }
         private void chkVertial_Checked(object sender, RoutedEventArgs e)
@@ -285,6 +290,21 @@ namespace WpfSample1.Views.Layouts
             if (sender == btnPlayer)
             {
                 WindowPlayer form = new WindowPlayer();
+                form.Owner = mainWindow;
+                form.ShowDialog();
+            }
+
+            if (sender == btnDataGrid)
+            {
+                DataGridDemo form = new DataGridDemo();
+                form.Owner = mainWindow;
+                form.ShowDialog();
+            }
+
+
+            if (sender == btnDbAccess)
+            {
+                DbAccessDemo form = new DbAccessDemo(_service);
                 form.Owner = mainWindow;
                 form.ShowDialog();
             }

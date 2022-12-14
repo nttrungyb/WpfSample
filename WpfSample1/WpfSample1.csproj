@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="appsettings.json" />
     <None Remove="Data\Files\Test.txt" />
     <None Remove="Resources\Images\1-edit.png" />
     <None Remove="Resources\Images\1-new-items.png" />
@@ -103,6 +104,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DemoControlLibrary\DemoControlLibrary.csproj" />
+    <ProjectReference Include="..\WpfSample1.Data\WpfSample1.Data.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -373,12 +375,21 @@
     <Resource Include="Resources\Images\wrong_16_16.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Data\Files\Test.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\Music\tongphu.mp4">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>

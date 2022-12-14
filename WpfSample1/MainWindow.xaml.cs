@@ -13,7 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WpfSample1.Component;
+using WpfSample1.Data;
 using WpfSample1.Day2;
+using WpfSample1.Services.Interfaces;
 using WpfSample1.Views.Layouts;
 using WpfSample1.Views.Login;
 using WpfSample1.Views.Menu;
@@ -30,10 +32,16 @@ namespace WpfSample1
         Page currentPage;
         MenuPage menuPage;
 
-        public MainWindow()
-        {
-            InitializeComponent();
+       // SampleDbContext _dbContext;
 
+        private readonly ISampleService _service;
+
+        public MainWindow(ISampleService service)
+        {
+
+            this._service = service;
+
+            InitializeComponent();
             loginPage = new LoginPage(this);
             frmMainContent.Navigate(loginPage);
             
@@ -54,7 +62,7 @@ namespace WpfSample1
 
         public bool ShowMainLayout()
         {
-            MainLayout mainLayout = new MainLayout(this);
+            MainLayout mainLayout = new MainLayout(this, _service);
             frmMainContent.Navigate(mainLayout);
             currentPage = mainLayout;
             return true;

@@ -79,6 +79,14 @@
                
             </StackPanel>
 
+
+            <StackPanel Margin="3" Name="stackPanel6" Orientation="Vertical">
+                <Label Margin="3" HorizontalAlignment="Center" FontWeight="Bold" >Day 6 - Data grid</Label>
+                <Button x:Name="btnDataGrid" Content="Datagrid Showcase" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
+                <Button x:Name="btnDbAccess" Content="Database Access Demo" Margin="10" Width="120" Height="30" Click="ShowCase_Click"></Button>
+               
+            </StackPanel>
+
         </StackPanel>
 
     </DockPanel>

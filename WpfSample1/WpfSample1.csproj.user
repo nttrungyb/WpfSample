@@ -94,6 +94,12 @@
     <Compile Update="Day5\WindowPlayer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Day6\DataGridDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Day6\DbAccessDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\UserControls\SeaFoodControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -196,6 +202,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Day5\WindowPlayer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Day6\DataGridDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Day6\DbAccessDemo.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
