@@ -7,19 +7,31 @@
         mc:Ignorable="d"
         Title="DbAccessDemo" Height="450" Width="800"
         WindowStartupLocation="CenterOwner">
+
+    
     <StackPanel>
-        <DataGrid x:Name="gridSeaFood" AlternatingRowBackground="LightBlue" AlternationCount="2"
-                  AutoGenerateColumns="False">
+        <DataGrid x:Name="gridSeaFood" AlternatingRowBackground="LightBlue" AutoGenerateColumns="False" CanUserAddRows="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Mã" Binding="{Binding Ma}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Tên" Binding="{Binding Ten}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Giá" Binding="{Binding Gia}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Xuất xứ" Binding="{Binding XuatXu}"></DataGridTextColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.Header>
+                        <CheckBox Content="Chọn" Click="CheckBox_Click" />
+                    </DataGridTemplateColumn.Header>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <CheckBox IsChecked="{Binding Path=Chon, Mode=TwoWay}" HorizontalAlignment="Center" VerticalAlignment="Stretch"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button x:Name="BtnUpdate" Width="80" Height="25" Margin="5" Click="BtnUpdate_Click">Cập nhật</Button>
-            <Button Width="80" Height="25" Margin="5">Xóa</Button>
+            <Button x:Name="BtnAdd" Width="80" Height="25" Margin="5" Click="BtnAdd_Click">Thêm dòng</Button>
+            <Button x:Name="BtnUpdate" Width="80" Height="25" Margin="5" Click="BtnUpdate_Click">Lưu dữ liệu</Button>
+            <Button x:Name="BtnDelete" Width="80" Height="25" Margin="5" Click="BtnDelete_Click">Xóa</Button>
         </StackPanel>
     </StackPanel>
 </Window>

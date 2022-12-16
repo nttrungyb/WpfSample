@@ -158,3 +158,12 @@ D:\CODE\WPF\Git\WpfSample\WpfSample1\bin\Debug\net6.0-windows\WpfSample1.Data.pd
 D:\CODE\WPF\Git\WpfSample\WpfSample1\bin\Debug\net6.0-windows\appsettings.json
 D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day6\DbAccessDemo.g.cs
 D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day6\DbAccessDemo.baml
+D:\CODE\WPF\Git\WpfSample\WpfSample1\bin\Debug\net6.0-windows\AutoMapper.dll
+D:\CODE\WPF\Git\WpfSample\WpfSample1\bin\Debug\net6.0-windows\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\CODE\WPF\Git\WpfSample\WpfSample1\bin\Debug\net6.0-windows\IdentityModel.dll
+D:\CODE\WPF\Git\WpfSample\WpfSample1\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+D:\CODE\WPF\Git\WpfSample\WpfSample1\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+D:\CODE\WPF\Git\WpfSample\WpfSample1\bin\Debug\net6.0-windows\WpfLibrary1.Services.dll
+D:\CODE\WPF\Git\WpfSample\WpfSample1\bin\Debug\net6.0-windows\WpfLibrary1.Services.pdb
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day6\CallApiDemo.g.cs
+D:\CODE\WPF\Git\WpfSample\WpfSample1\obj\Debug\net6.0-windows\Day6\CallApiDemo.baml

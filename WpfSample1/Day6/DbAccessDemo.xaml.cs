@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using WpfSample1.Data.Models;
+using WpfSample1.Models;
 using WpfSample1.Services.Interfaces;
 
 namespace WpfSample1.Day6
@@ -23,6 +24,8 @@ namespace WpfSample1.Day6
     {
         private readonly ISampleService _service;
 
+        List<SeaFoodWithCheckBox> gridData;
+
         public DbAccessDemo(ISampleService service)
         {
             InitializeComponent();
@@ -30,23 +33,22 @@ namespace WpfSample1.Day6
             SetGridData();
         }
 
-
         void SetGridData()
         {
-            List<SeaFood> data = _service.GetSeaFoods();
-            gridSeaFood.ItemsSource = data;
+            gridData = _service.GetSeaFoods();
+            gridSeaFood.ItemsSource = gridData;
         }
 
         private void BtnUpdate_Click(object sender, RoutedEventArgs e)
         {
             if (gridSeaFood.SelectedItem != null)
             {
-                SeaFood seaFood = (SeaFood)gridSeaFood.SelectedItem;
+                SeaFoodWithCheckBox seaFood = (SeaFoodWithCheckBox)gridSeaFood.SelectedItem;
                 //MessageBox.Show($"{seaFood.Ma} - {seaFood.Ten} -  {seaFood.Gia} - {seaFood.XuatXu}");
-                var _result = _service.UpdateSeaFood(seaFood);    
+                var _result = _service.UpdateSeaFood(seaFood);
                 if (_result > 0)
                 {
-                    MessageBox.Show("Cập nhật dữ liệu thành công!" , "Thông báo");
+                    MessageBox.Show("Cập nhật dữ liệu thành công!", "Thông báo");
                     SetGridData();
                 }
                 else
@@ -58,6 +60,40 @@ namespace WpfSample1.Day6
             {
                 MessageBox.Show("Bạn chưa nhập giá trị!", "Thông báo");
             }
+
+        }
+
+        private void BtnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            gridData.Add(new SeaFoodWithCheckBox() { Ma = 0, Ten = "", Gia = 1000, XuatXu = "", Chon = false });
+            gridSeaFood.Items.Refresh();
+        }
+
+        private void BtnDelete_Click(object sender, RoutedEventArgs e)
+        {
+            SeaFoodWithCheckBox seaFood = (SeaFoodWithCheckBox)gridSeaFood.SelectedItem;
+            if (seaFood.Ma == 0)
+            {
+                gridData.Remove(seaFood);
+                gridSeaFood.Items.Refresh();
+            }
+            else
+            {
+                var _result = _service.RemoveSeaFood(seaFood.Ma);
+                if (_result > 0)
+                {
+                    MessageBox.Show("Xóa dữ liệu thành công!", "Thông báo");
+                    SetGridData();
+                }
+                else
+                {
+                    MessageBox.Show("Xóa dữ liệu thất bại!", "Thông báo");
+                }
+            }
+        }
+
+        private void CheckBox_Click(object sender, RoutedEventArgs e)
+        {
             
         }
     }

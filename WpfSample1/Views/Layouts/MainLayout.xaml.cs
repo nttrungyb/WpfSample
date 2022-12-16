@@ -309,6 +309,13 @@ namespace WpfSample1.Views.Layouts
                 form.ShowDialog();
             }
 
+            if (sender == btnCallApi)
+            {
+                CallApiDemo form = new CallApiDemo(_service);
+                form.Owner = mainWindow;
+                form.ShowDialog();
+            }
+
         }
     }
 }
